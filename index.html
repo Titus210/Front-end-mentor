@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive-card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--Main wrapper-->
+    <div class="main-container">
+        <!--Container 1-->
+        <div class="container-1">
+            <div class="card-21">
+                <p>123</p>
+            </div>
+            <div class="card-1">
+                    <div class="borders">
+                    <p class="text-center"></p>
+                    <p class="border-0"></p>
+                </div>
+                     <p>0000 0000 0000 0000 0000 </p>
+                    <div class="name"><p class="full-name">Jane Appleseed</p>
+                    <p class="number-0">00/00</p>
+                </div>
+                
+            </div>
+           
+    <!--Container 1 Ends Here-->
+       </div>
+       <!--Container 2-->
+        <div class="container-2">
+            <div class="details">
+                <form action="/">
+
+                    <!--Cardholder-->
+                <label for="fName" class="full-name">Cardholder name</label>
+                <input type="text" class="name" id="fname" placeholder="eg. Jane Appleseed" required >
+              
+                <!--Card Number-->
+                <label for="fName" class="card-number">Card Number</label>
+                <input type="text" class="name" id="cardnumber" placeholder="eg. 1234 5678 9123 0000" required >
+               
+                <!--Exp date-->
+                
+                <label for="Date" class="Date">Exp. date (mm/yy)</label>
+            <section class="date">
+                <input type="datetime" class="mmname" id="mm" placeholder="MM" required >
+                <input type="datetime" class="yyname" id="yy" placeholder="YY" required >
+           
+                <!--CVC-->
+                <div class="cVc">
+                <label for="cvc" class="cvc">CVC</label>
+                <input type="text" class="cvcname" id="cvcname" placeholder="eg. 123" required >
+            </div>
+            </section>
+                <!--Submit-->
+                <input type="submit" class="btn btn-primary" value="Submit" required>
+            </form>
+            </div>
+        </div>
+         <!--Container 2 Ends Here-->
+    </div>
+</body>
+</html>
