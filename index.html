@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive-card</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
      <!--Main wrapper-->
@@ -13,16 +14,18 @@
         <!--Container 1-->
         <div class="container-1">
             <div class="card-21">
-                <p>123</p>
+                <p id="cvcout">123</p>
             </div>
             <div class="card-1">
                     <div class="borders">
                     <p class="text-center"></p>
                     <p class="border-0"></p>
                 </div>
-                     <p>0000 0000 0000 0000 0000 </p>
-                    <div class="name"><p class="full-name">Jane Appleseed</p>
-                    <p class="number-0">00/00</p>
+                     <p id="numberDetails">0000 0000 0000 0000</p>
+                    
+                    <div class="name"><p class="full-name" id="full-name">Jane Appleseed</p>
+                    
+                    <p class="number-0"><span id="mnth">00</span>/<span id="yr">00</span></p>
                 </div>
                 
             </div>
@@ -36,31 +39,50 @@
 
                     <!--Cardholder-->
                 <label for="fName" class="full-name">Cardholder name</label>
-                <input type="text" class="name" id="fname" placeholder="eg. Jane Appleseed" required >
+                <input type="text" name="cardHolders" class="name" id="fname" placeholder="eg. Jane Appleseed"
+                required pattern="a-zA-Z ">
+                 <p class="errorName" id="errorName">Wrong format, letters only</p>
               
                 <!--Card Number-->
                 <label for="fName" class="card-number">Card Number</label>
-                <input type="text" class="name" id="cardnumber" placeholder="eg. 1234 5678 9123 0000" required >
-               
+                <input type="text" name="cardNumber" class="name" id="cardNumber" placeholder="eg. 1234 5678 9123 0000"
+               onblur="cardNumberValidation();" required >
+                <p class="errorCard" id="errorCard">Wrong format, numbers only</p>
                 <!--Exp date-->
                 
+              
                 <label for="Date" class="Date">Exp. date (mm/yy)</label>
+              
             <section class="date">
-                <input type="datetime" class="mmname" id="mm" placeholder="MM" required >
-                <input type="datetime" class="yyname" id="yy" placeholder="YY" required >
+                <input type="datetime" name="month" class="mmname" id="mm" placeholder="MM"
+                onblur="monthValidation();" required >
+              
+                
+                <input type="datetime" name="year" class="yyname" id="yy" placeholder="YY" 
+                onblur="yearValidation();" required >
+                
            
+            
                 <!--CVC-->
                 <div class="cVc">
                 <label for="cvc" class="cvc">CVC</label>
-                <input type="text" class="cvcname" id="cvcname" placeholder="eg. 123" required >
+                <input type="text" name="cvc" class="cvcname " id="cvcname" placeholder="eg. 123" 
+                onblur="cvcValidation(); " required >
+                <p class="errorCvc">Can't be blank</p>
+               
             </div>
-            </section>
+        </section>
+        <p class="errorCode" id="errorDate">Wrong format, numbers only</p>
+        
                 <!--Submit-->
-                <input type="submit" class="btn btn-primary" value="Submit" required>
+              
+                <button class="button" > Continue </button></a>
             </form>
             </div>
         </div>
          <!--Container 2 Ends Here-->
     </div>
+   <script src="./interact.js"></script>   
+
 </body>
 </html>

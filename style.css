@@ -1,15 +1,21 @@
 /*Font-family*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
 /*Project Defaults*/
+
 :root {
     --fontfamily:'Space Grotesk', sans-serif;
     --primary-color:linear-gradient(from  hsl(249,99%,64%) to hsl(278,94%,30%));
-    --error-color:  hsl(0,100%,66%);
+    --error-color:  #ff5252;
     --white-color: hsl(0,0%,100%);
     --light-grayish-violet:hsl(270,3%,87%);
     --dark-grayish-violet:hsl(279,6%,55%);
     --very-dark-grayish-violet:hsl(278,68%,11%);
 }
+
+    /*--------Html----------- */
+    
+       
+    
     /*--------Root----------- */
 *
 {
@@ -84,13 +90,15 @@ input[type="text"]
 }
 
 
-input[type="submit"]
+
+.button
 {
     background-color: var(--very-dark-grayish-violet);
     color: var(--white-color);
     border-radius: 4px;
     padding: 5px 110px;
     margin-top: 12px;
+    display: block;
 }
 /*-----------     Label   -----------------------*/
 label
@@ -106,6 +114,7 @@ label
 {
     display: inline-flex;
     flex-direction: row;
+    margin-bottom: -4px;
  
     
 }
@@ -215,9 +224,18 @@ input[type="datetime"]
     
 }
 
-
-/* ========================== End of card 21=======================================
-
+.errorCode, .errorName, .errorCvc, .errorCard
+{
+    display: none;
+    font-size: 9px;
+    margin-bottom: 5px;
+    color: var(--error-color);
+}
+.errorDate
+{
+    display: block;
+}
+/* ========================== End of card 21=======================================*/
 
 
 /*Media Query */
@@ -300,4 +318,37 @@ input[type="submit"]
 {
     padding-bottom: 1px;
 }
+.button
+{
+    padding: 5px 96px;
+    margin-left: 12px;
+    margin-top: 2px;
 }
+}
+/*===== VERIFICATION =====*/
+/*
+#cardNumber:invalid
+{
+    border: 1px solid ;
+    border-color: var(--error-color);
+}
+
+.errorName, 
+.errorCode, .errorCvc
+
+{
+    color: var(--error-color);
+    display: block;
+}
+
+#cvcname:invalid
+{
+    border: 1px solid;
+    border-color: var(--error-color);
+}
+#mm:invalid, #yy:invalid
+{
+    border: 1px solid;
+    border-color: var(--error-color);
+}
+*/
