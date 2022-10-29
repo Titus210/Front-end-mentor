@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+ 
+    background: rgb(255, 251, 0);
+}
+
+.main-wrapper {
+    position:absolute;
+
+    display: block;
+    bottom:3;
+    text-align: center;
+
+}
+
+.page-content {
+    margin-left: 2rem;
+
+}
+
+.guest_login{
+}
