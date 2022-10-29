@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+    --poopin-font: 'Poppins', sans-serif;
+    --main-color: #524fb7;
+    --dark-color: #100007;
+    --white-color: #fff;
+    --orange-color: #ff5714;
+    --orange-prim: #fe5d36;
+    --gray-color: #f4f4f9;
+    --blue: #100abc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--poopin-font);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--dark-color);
+    background-color: var(--gray-color);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--Welcome */
+.welcome h3 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+/** social Link **/
+ul {
+    list-style: none;
+}
+
+/* container */
+
+
+.container {
+    max-width: 58.75rem;
+    margin: 0 auto;
+
+}
+
+/* Wrapper  Login  and signUp*/
+.wrapper {}
+
+.wrapper>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50rem;
+    min-height: 31.25rem;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+
+
+:is(.login, .signUp)>div {
+    position: relative;
+    flex: 1 0 50%;
+    padding: 0.75rem;
+}
+
+/* content header */
+
+
+
+.content-heading .y-style {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Logo */
+
+.logo a {
+    display: inline-block;
+    margin-bottom: 20.75px;
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.logo span {
+    color: var(--orange-color);
+}
+
+
+
+/* Content Form */
+.content-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Hide sign Up */
+.login {
+    display: none !important;
+}
+
+.login {
+    display: flex;
+
+    margin: 0 0 1.25rem;
+}
+
+
+form input:not(#terms, #remember) {
+    font-family: inherit;
+    width: 100%;
+    margin: 0 0 1.25rem;
+    border-radius: 0.625rem solid var(--white-color);
+    padding: 0.425rem 0.8375rem;
+    border: 0;
+
+}
+
+form input::placeholder {
+    color: var(--blue);
+}
+
+.afterForm button {
+    background-color: #fe5d36;
+    color: var(--white-color);
+    width: 100%;
+    margin: 1.075rem 0;
+    border: 0;
+    line-height: 2.625rem;
+    border-radius: 0.4375rem;
+    cursor: pointer;
+    /* transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out; */
+
+}
+
+button:hover {
+    background-color: var(--dark-color);
+
+}
+
+/*----  After Form */
+.afterForm {
+    text-align: center;
+
+}
+
+form .check {
+    position: relative;
+    padding-left: 0.85rem;
+    font-size: 0.75rem;
+    float: left;
+}
+
+form .check input {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+
+
+}
+
+form .forgot {
+    float: right;
+    font-size: 0.75rem;
+}
+
+form label a,
+.afterForm a {
+    color: var(--main-color);
+
+}
+
+form :is(p, label) a:hover,
+.afterForm a:hover {
+    border-bottom: 1px dotted;
+}
+
+.content-form::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 200%;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    transform: translate3d(27%, 21%, 0);
+    -webkit-transform: translate3d(-27%, 21%, 0);
+
+}
+
+.y-style {
+    position: relative;
+}
+
+/*-------------------------------------*/
+/*               Media Queries         */
+/*-------------------------------------*/
+@media screen and (min-width:768px) {
+
+    .wrapper>div {
+        flex-direction: row;
+        max-width: 50rem;
+
+    }
+
+    .signUp .content-heading .y-style {
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .content-form::before {
+        transform: translate3d(-18%, -10%, 0);
+        -webkit-transform: translate3d(-18%, -10%, );
+        height: 150%;
+        width: 200%;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapper>div {
+        min-height: 100vh;
+        display: block;
+
+    }
+
+    .login .content-form {
+        margin-top: 2%;
+
+    }
+
+    .afterForm {
+        margin-top: 30%;
+
+    }
+
+    form {
+        margin-top: 1rem;
+    }
+
+
+}
