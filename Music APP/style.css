@@ -98,7 +98,14 @@ header,
     padding: 6px;
 }
 
-.left-arrow:hover,
-.list-btn:hover{
+.left-arrow:active,
+.list-btn:active{
     box-shadow:var(--box-shadow2)
+}
+
+
+header h3{
+    text-transform:uppercase;
+    font-size:0.875rem;
+    color:#86838c;
 }
