@@ -140,13 +140,16 @@ header h3 {
 }
 
 .song-timer {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .song-timer span {
     font-size: 0.625rem;
     color: #86898C;
     font-weight: 1000;
+    margin:0 0.75rem;
 }
 
 /* Progress Area */
@@ -159,10 +162,11 @@ header h3 {
     box-shadow: var(--box-shadow2)
 }
 
-.progress-bar{
-    height:inherit;
-    width:0;
-    position:relative;
+.progress-bar {
+    height: inherit;
+    width: 0;
+    position: relative;
     border-radius: inherit;
-    background: linear-gradient(90deg, #bf2311 0% )
+    background: linear-gradient(90deg, #bf2311 0%, #e5130a 80%);
+    box-shadow: var(--box-shadow4);  
 }
