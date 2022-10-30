@@ -56,7 +56,7 @@ body {
 /* Wrapper */
 .music-container {
     max-width: 900px;
-    max-height: 100vh;
+    min-height: 100vh;
     text-align: center;
     padding: 2rem;
     margin: 0 auto;
@@ -110,11 +110,12 @@ header h3 {
 /* Music Player*/
 .music-player {
     margin-top: 2rem;
+    min-height:100vh;
 }
 
 .music-image img {
     width: 12rem;
-    height: 11rem;
+    height: 12rem;
     margin-bottom: 2rem;
     border: 0.625rem solid var(--border-2);
     border-radius: 50%;
@@ -242,12 +243,26 @@ header h3 {
     transition: all .2s ease;
     background: var(--background-3);
     border-radius: 50%;
+    background: linear-gradient(90deg, #d35244 0%, #5e100d 80%);
 
 
 }
 
 .pause i {
     text-align: center;
-    color: rgb(157, 140, 140);
+    color: rgb(255, 255, 255);
 
+}
+
+.rotate{
+    animation: rotation 8s infinite linear;
+    transform-origin: center;
+}
+@keyframes rotation{
+    from { 
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
