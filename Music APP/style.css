@@ -154,7 +154,7 @@ header h3 {
 
 /* Progress Area */
 .progress-area {
-    height: 0.4375rem;
+    height: 0.2375rem;
     width: 100%;
     margin-top: 0.9375rem;
 
@@ -172,17 +172,51 @@ header h3 {
 }
 
 .progress-bar:before {
-    content:"";
+    content: "";
     position: absolute;
-    background:var(--background-2);
+    background: var(--background-2);
     box-shadow: var(--box-shadow5);
-    border-radius:50%;
-    top:50%;
-    right:-0.875rem;
+    border-radius: 50%;
+    top: 50%;
+    right: -0.875rem;
     z-index: 2;
-    width:1.75rem;
-    height:1.75rem;
-    outline:none;
+    width: 1.25rem;
+    height: 1.25rem;
+    outline: none;
     pointer-events: none;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+}
+
+.progress-bar:after {
+    content: "";
+    position: absolute;
+    background: #e5950a;
+    box-shadow: var(--box-shadow5);
+    border-radius: 50%;
+    top: 50%;
+    right: -0.675rem;
+    z-index: 2;
+    width: 0.55rem;
+    height: 0.55rem;
+    outline: none;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+}
+
+/* Controls */
+.controls {
+    margin: 3.4375rem 0.5rem 0.3125rem 0.5rem;
+   
+}
+
+.prev{
+    width: 4.375rem;
+    height:4.375rem;
+    border: 0.1875rem solid var(--box-shadow5);
+    transition: all .2s ease;
+    background:var(--background-3);
+    border-radius: 50%;
+    
 }
