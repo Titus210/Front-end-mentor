@@ -171,7 +171,7 @@ header h3 {
     box-shadow: var(--box-shadow4);
 }
 
-.progress-bar:before {
+.progress-bar::before {
     content: "";
     position: absolute;
     background: var(--background-2);
@@ -188,7 +188,7 @@ header h3 {
     transition: all 0.2s ease;
 }
 
-.progress-bar:after {
+.progress-bar::after {
     content: "";
     position: absolute;
     background: #e5950a;
@@ -207,16 +207,47 @@ header h3 {
 
 /* Controls */
 .controls {
-    margin: 3.4375rem 0.5rem 0.3125rem 0.5rem;
-   
+    margin: 2.4375rem 0.5rem 0.3125rem 0.5rem;
+
 }
 
-.prev{
-    width: 4.375rem;
-    height:4.375rem;
+.prev,
+.next {
+    width: 2.375rem;
+    height: 2.375rem;
     border: 0.1875rem solid var(--box-shadow5);
     transition: all .2s ease;
-    background:var(--background-3);
+    background: var(--background-3);
     border-radius: 50%;
-    
+    text-align: center;
+
+}
+
+.prev:active,
+.next:active {
+    box-shadow: var(--box-shadow6);
+}
+
+.controls i {
+    font-size: 0.95rem;
+    user-select: none;
+    color: #575a57;
+    cursor: pointer;
+}
+
+.controls .pause {
+    width: 2.375rem;
+    height: 2.375rem;
+    border: 0.1875rem solid var(--box-shadow5);
+    transition: all .2s ease;
+    background: var(--background-3);
+    border-radius: 50%;
+
+
+}
+
+.pause i {
+    text-align: center;
+    color: rgb(157, 140, 140);
+
 }
