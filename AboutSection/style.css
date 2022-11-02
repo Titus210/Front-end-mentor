@@ -7,15 +7,17 @@
 
 .section {
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     background-color: #ddd;
+
 }
 
 .container {
     width: 80%;
     display: block;
-    padding-top: 3.625rem;
+    padding-top: 2.225rem;
     margin: 0 auto;
+
 }
 
 .cont-section {
@@ -29,18 +31,138 @@
 
 }
 
-.cont-section  .content {
+.cont-section .title h1 {
+    text-transform: uppercase;
+    color: #fc6a10;
+
+}
+
+.cont-section .content h3 {
     margin-top: 1.125rem;
     color: #5d5d5d;
+    font-size: 1.22rem;
+}
+
+.cont-section .content p {
+    margin-top: 0.625rem;
+    text-transform: capitalize;
+    font-size: 1.0rem;
+}
+
+.cont-section .content .button,
+.social {
+
+    text-align: center;
+    display: block;
+    margin: 1.4rem auto;
+}
+
+.cont-section .content .button a {
+    background-color: #3d3d3d;
+    padding: 0.75rem 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.0625rem;
+    letter-spacing: 0.2rem;
+    border-radius: 12px;
+}
+
+.cont-section .content .button a:hover {
+    background-color: #d35d14;
+    color: #fff;
+}
+
+.cont-section .social i {
+    color: rgb(184, 175, 57);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+
+}
+
+.cont-section .social .fa-facebook-f {
+    color: #4267B2;
+    margin-bottom: 0.5rem;
+}
+
+.cont-section .social .fa-twitter {
+    color: #00acee;
+}
+
+.cont-section .social .fa-instagram {
+    color: #891ab1;
 }
 
 .image-section {
     float: right;
-    width: 40%
+    width: 40%;
+    padding-top: 2%;
 }
 
 .image-section img {
     width: 80%;
     height: auto;
     border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        background-color: initial;
+    }
+
+    .container {
+        width: 100%;
+        display: block;
+        padding-top: 1.125rem;
+        height: max-content;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    .container::before {
+
+        content: "";
+        background: url("./business2.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.45;
+
+    }
+
+
+
+    .cont-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        position: relative;
+        color: black;
+
+        line-height: 0.9;
+        text-align: center;
+
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .cont-section .title{
+        padding:0.75rem;
+    } .cont-section .title h3 {
+        color: #fff;    
+    }
+
+    .cont-section .content p {
+        margin-top: 0.625rem;
+        text-transform: capitalize;
+        font-size: 0.7rem;
+    }
 }
