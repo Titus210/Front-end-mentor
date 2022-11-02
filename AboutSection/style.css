@@ -7,15 +7,15 @@
 
 .section {
     width: 100%;
-    min-height:45vh;
+    height: 60vh;
     background-color: #ddd;
 }
 
 .container {
     width: 80%;
     display: block;
-    padding-top: 0.625rem;
-    margin:0 auto;
+    padding-top: 3.625rem;
+    margin: 0 auto;
 }
 
 .cont-section {
@@ -23,12 +23,24 @@
     width: 50%
 }
 
+.cont-section .title {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+
+}
+
+.cont-section  .content {
+    margin-top: 1.125rem;
+    color: #5d5d5d;
+}
+
 .image-section {
     float: right;
     width: 40%
 }
 
-.image-section img{
-    width:100%;
+.image-section img {
+    width: 80%;
     height: auto;
+    border-radius: 1rem;
 }
