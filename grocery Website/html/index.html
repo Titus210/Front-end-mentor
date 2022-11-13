@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery</title>
+
     <!------------FONT-AWSOME LINK--------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--Local Css link-->
-        <link rel="stylesheet" href="../css/style.css" type ="stylesheet">
+    <!--Local Css link-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Grocery</title>
 </head>
+
 <body>
     <header class="header">
-        <a href ="#"><i class = "fas fa-shopping-cart"></i>Grocery</a>
-        <nav class ="navbar">
-            <a href = "#home">home</a>
-            <a href = "#products">products</a>
-            <a href = "#about">about us</a>
-            <a href = "#">Customers</a>
-            <a href = "#">blog</a>
-            <a href = "#">Contact Us</a>
-        </nav>
+        <div class="logo">
+            <a href="#"><i class="fas fa-shopping-cart"></i>Grocery</a>
+        </div>
+        <div class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#about">about us</a>
+        </div>
         <div class="iconMenu">
-            <div id = "cart-btn" class = "fas fa-shopping-basket"></div>
-            <div id = "login-btn" class = "fas fa-shopping-login"></div>
-            <div id = "bars-btn" class = "fas fa-shopping-bars"></div>
+            <div class="search-bar">
+                <input type="search" placeholder="search here...">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <div id="cart-btn" class="fas fa-shopping-basket"><span>0</span></div>
+            <div id="login-btn" class="fas"> Login</div>
+            <div id="bars-btn" class="fas fa-bars"></div>
+
+
         </div>
     </header>
 </body>
+
 </html>

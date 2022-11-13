@@ -2,12 +2,13 @@
 
 
 :root {
-    --primary-color: #3bb77e;
+    --primary-color: #30bf7c;
     --sec-color: #ffba43;
-    --backgr-color: #e2f9ee;
+    --backgr-color: #e9efed;
     --black-primary: #1c2137;
     --white: #fff;
     --box-shaddo: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --red-color: rgb(235, 12, 12);
 }
 
 * {
@@ -18,7 +19,6 @@
 }
 
 html {
-    font-size: 62.5%;
     overflow: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
@@ -40,10 +40,143 @@ body {
     outline: none;
     border: none;
     transition: .2s linear;
+    font-size: 16px;
 }
 
 /*-----------------Header------*/
-header
-{
-position: fixed;
+.header {
+    display: flex;
+    background: var(--backgr-color);
+    justify-content: space-around;
+
 }
+
+.header::after {
+    content: "";
+    clear: both;
+}
+
+.header>div {
+    display: flex;
+    align-self: center;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar {}
+
+.navbar a {
+    color: var(--black-primary);
+    text-decoration: none;
+    margin-left: 40px;
+    transition: .4s;
+    flex-direction: row;
+    align-self: center;
+
+}
+
+.navbar a:hover {
+    color: var(--sec-color);
+    border-bottom: 1px dotted var(--primary-color);
+}
+
+.iconMenu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.iconMenu .search-bar {
+    width: max-content;
+    display: flex;
+    border-radius: 12px;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 0 7px 0 0;
+}
+
+
+.iconMenu .search-bar input {
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.iconMenu .search-bar i {
+    margin-left: 7px;
+    align-self: center;
+    color: var(--white)
+}
+
+.iconMenu .search-bar i:hover {
+    color: var(--sec-color);
+    cursor: pointer;
+}
+
+.iconMenu .fas {
+    margin-left: 22px;
+    padding: 1px;
+    display: flex;
+    align-self: center;
+
+}
+
+.iconMenu #login-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--black-primary);
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+
+
+}
+
+.iconMenu #login-btn:hover {
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--black-primary);
+    background-color: var(--sec-color);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.iconMenu #cart-btn:hover {
+    color: var(--sec-color);
+    cursor: pointer;
+}
+
+.iconMenu #cart-btn {
+    color: var(--primary-color);
+}
+
+.iconMenu #cart-btn span {
+    position: relative;
+    top: -5px;
+    right: 2px;
+    padding: 2px;
+    font-size: 7px;
+    color: var(--red-color)
+}
+
+#bars-btn {
+    display: none;
+}
+
+
+
+med
