@@ -43,6 +43,33 @@ body {
     font-size: 16px;
 }
 
+.tel-details {
+    display: flex;
+    justify-content: space-between;
+    background: var(--sec-color)
+}
+
+.telephone,
+.language {
+    display: inline-flex;
+    padding: 7px;
+}
+
+.telephone>p,
+.language>p {
+    margin-left: 12px;
+    font-size: 12px;
+
+}
+
+.telephone>p {
+    text-transform: lowercase;
+}
+
+.telephone .fas {
+    padding-right: 7px;
+}
+
 /*-----------------Header------*/
 .header {
     display: flex;
@@ -178,5 +205,60 @@ body {
 }
 
 
+.landing-page {
+    display: flex;
 
-med
+}
+
+.landing-text {
+    width: 50%;
+    float: left;
+
+}
+
+.landing-text .text-l {
+    display: block;
+    margin: 0 auto;
+
+
+
+}
+
+.landing-image {
+    width: 50%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--white);
+        width: 30%;
+    }
+
+    .navbar a {
+        margin: 12px;
+        padding: 8px 0;
+        width: 100%;
+
+    }
+
+    .navbar a:hover {
+        background: var(--sec-color);
+        color: var(--primary-color)
+    }
+}
