@@ -4,10 +4,10 @@
 :root {
     --primary-color: #30bf7c;
     --sec-color: #ffba43;
-    --backgr-color: #e9efed;
+    --backgr-color: #ffffffc7;
     --black-primary: #1c2137;
     --white: #fff;
-    --box-shaddo: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --red-color: rgb(235, 12, 12);
 }
 
@@ -18,6 +18,7 @@
     box-sizing: border-box;
 }
 
+/* 
 html {
     overflow: hidden;
     scroll-padding-top: 9rem;
@@ -31,7 +32,7 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
     background: transparent;
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -41,6 +42,7 @@ body {
     border: none;
     transition: .2s linear;
     font-size: 16px;
+    background: var(--backgr-color);
 }
 
 .tel-details {
@@ -73,8 +75,10 @@ body {
 /*-----------------Header------*/
 .header {
     display: flex;
-    background: var(--backgr-color);
+    background: var(--white);
     justify-content: space-around;
+    box-shadow: var(--box-shadow);
+    margin: 2px 0;
 
 }
 
@@ -205,60 +209,189 @@ body {
 }
 
 
-.landing-page {
+.landing-page::before {
+    content: "";
     display: flex;
-
+    height: 90vh;
+    background-color: var(--white);
+    background-image: url(../images/fruits_2-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .landing-text {
-    width: 50%;
+    width: 100%;
     float: left;
-
 }
 
 .landing-text .text-l {
     display: block;
     margin: 0 auto;
+}
 
 
+
+.text-l {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: var(--white);
 
 }
 
-.landing-image {
-    width: 50%;
+.text-l span {
+    color: #ffba43;
+}
+
+
+
+.items h2 {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.container-list::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container-list {
+    content: '';
+    display: flex;
+    margin: 12px;
+    gap: 2%;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.container-list .card-items {
     float: left;
+    width: 25%;
+    padding: 0 10px;
+    display: block;
+    box-shadow: 2px 5px 10px #888888;
+    padding: 7px;
+    border-radius: 12px;
 }
 
+.card-items img {
+    width: 100%;
+    border-radius: 7px;
+}
 
+.card-items h4 {
+    font-weight: 400;
+}
 
+.card-items>p {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+}
 
+.card-items .button {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 
+}
 
+.card-items .button p {
+    font-size: 14px;
+    align-self: center;
+    opacity: 0.7;
+}
 
+.card-items button {
+    padding: 4px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    align-self: center;
+}
 
-
+.card-items button:hover {
+    background-color: var(--sec-color)
+}
 
 
 @media screen and (max-width: 768px) {
+
+    .header>div {
+
+        padding: 0px;
+   
+
+    }
+
     .navbar {
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 0;
         left: 0;
-        background-color: var(--white);
+        background-color: rgb(89, 77, 100);
         width: 30%;
+        height: 20vh;
+
     }
 
     .navbar a {
         margin: 12px;
         padding: 8px 0;
         width: 100%;
-
+        color: white;
     }
 
     .navbar a:hover {
         background: var(--sec-color);
         color: var(--primary-color)
     }
+
+    .landing-page::before {
+        height: 35vh;
+    }
+
+    .text-l {
+        text-align: center;
+        margin: 0 auto;
+        position: static;
+        top: 50%;
+        transform: translate(50%, -50%);
+        color: var(--white);
+
+    }
+
+    .container-list {
+        content: '';
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-basis: auto;
+
+    }
+
+    .container-list .card-items {
+        float: left;
+        width: 48%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .card-items img {
+        width: 100%;
+    }
+
+
 }
