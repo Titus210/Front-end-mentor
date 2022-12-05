@@ -1,0 +1,138 @@
+/* landing homepage*/
+.landing-homepage {
+    background: var(--primary-green);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-homepage .landing-image h2 {
+    color: var(--primary-white);
+    font-size: 68px;
+    font-weight: 1000;
+}
+
+.landing-homepage .landing-text h3 {
+    font-size: 28px;
+    font-weight: 1000;
+    color: var(--primary-white);
+}
+
+/* Get started */
+.getStarted-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-gray);
+}
+
+.getStarted-wrapper .site-logo {
+    text-align: center;
+}
+
+.getStarted-wrapper .site-logo h3,
+.getStarted-wrapper .site-logo h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--primary-green)
+}
+
+.getStarted-wrapper .site-logo h2 {
+    font-size: 42px;
+}
+
+.getStarted-text h3 {
+    text-align: center;
+}
+
+.getStarted-text p {
+    text-align: center;
+}
+
+.getStarted-buttons {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.getStarted-buttons p,
+.login .form-login form #submit-login {
+    border: 1px solid var(--primary-green);
+    padding: 10px 12px;
+    border-radius: 11px;
+    font-size: 1.1rem;
+    color: var(--primary-green)
+}
+
+.getStarted-buttons p:first-child,
+.login .form-login form #submit-login {
+    border: none;
+    background: var(--primary-green);
+    margin-bottom: 18px;
+    color: var(--primary-white)
+}
+
+/* Login*/
+.login {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 4px;
+}
+
+.login .login-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.login .login-header i {
+    text-align: center;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+
+.login .form-login {}
+
+.login .form-login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login .form-login form input {
+    padding: 12px;
+    background: rgba(226, 222, 226, 0.2);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 11px;
+    ;
+}
+
+.login .form-login form input:first-child {
+    margin-bottom:1rem;
+}
+
+.login .form-login form #forgot-password {
+    text-align: right;
+    width: 98%;
+    color: var(--primary-green);
+    text-decoration: underline;
+}
+
+.login .form-login form #forgot-password:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.login .form-login form #submit-login {
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 18px;
+}
