@@ -250,34 +250,431 @@
 }
 
 
-@media screen and (min-width:768px) {
-    .login {
-        width: 30%;
-        margin: 4% auto;
-    }
-
-    .login .login-header {
-        display: none;
-    }
+/*landing pasge*/
+.landing-page {
+    margin: 0 14px;
+    background: var(--primary-white);
+    background-attachment: fixed;
 }
 
-/*landing pasge*/
 .landing-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: auto;
     font-size: 22px;
-}
-.landing-header p{
-    font-weight: 800;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 
+
+}
+
+/* 
+.landing-header p, .landing-header .landing-nav ul li {
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+} */
+
+.landing-header .landing-nav {
+    display: none;
 }
 
 .landing-header .header-message i {
     font-size: 20px;
     margin-right: 20px;
+
 }
-.landing-search{
+
+.landing-search {
     width: 100%;
+    margin-top: 20px;
+}
+
+.header-message input {
+    display: none;
+}
+
+.landing-search input {
+    width: 98%;
+    display: block;
+    padding: 12px;
+    background: rgba(204, 197, 204, 0.4);
+    border: none;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* landing slideshows */
+.landing-slideshow {
+    background: rgba(218, 227, 228, 0.2);
+    box-shadow: var(--box-shadow);
+}
+
+.landing-slideshow .slide-images {
+
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.landing-slideshow .slide-images {
+    display: flex;
+    height: 70vh;
+    background: var(--primary-white);
+
+}
+
+.landing-slideshow .slide-images .landing-img-text {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    top: 18%;
+    padding: 10px 20px;
+    color: var(--primary-green);
+}
+
+.landing-slideshow .slide-images .slide-show-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing-slideshow .slide-images .slide-show-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Landing Showcase */
+.landing-showcase {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(218, 227, 228, 0.2);
+    box-shadow: var(--box-shadow);
+}
+
+
+.landing-showcase>div {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-showcase>div i {
+    padding: 12px;
+    background: rgb(253, 249, 249);
+    border-radius: 50%;
+    color: var(--primary-green)
+}
+
+.landing-showcase>div p {
+    margin-bottom: 0px;
+    color: rgb(110, 101, 101);
+    font-size: 12px;
+}
+
+
+/*Landing description*/
+.landing-deacr {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background: rgba(218, 227, 228, 0.2);
+    margin: 10px auto;
+    box-shadow: var(--box-shadow);
+    height: 30vh;
+}
+
+.descr-text {
+    width: 70%;
+}
+
+.descr-text p:not(:last-child) {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.descr-text p:last-child {
+    background-color: var(--primary-green);
+    width: 40%;
+    align-items: center;
+    padding: 5px 8px;
+    margin: 10px auto;
+    text-align: center;
+    color: var(--primary-white);
+    border-radius: 11px;
+    font-size: 12px;
+}
+
+
+
+.descr-img {
+    width: 40%;
+    height: 100%;
+}
+
+.descr-img img {
+    object-fit: cover;
+    /* vertical-align: revert; */
+    width: 100%;
+    height: 100%;
+}
+
+.descr-adv {
+    display: none;
+}
+
+/*health article and top doctors*/
+
+.top-doctors,
+.health-article {
+
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+.top-doctors .top-doctors-header,
+.health-article-header {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+.top-doctors .top-doctors-header p,
+.health-article-header p {
+    font-weight: 700;
+}
+
+.top-doctors .top-doctors-header p:last-child,
+.health-article-header p:last-child {
+    color: var(--primary-green);
+}
+
+.top-doctors-card-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.top-doctors-card {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+
+    margin-right: 12px;
+    box-shadow: var(--box-shadow);
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.top-doctor-desc {
+    margin: 10px;
+}
+
+.top-doctors-card .top-doctor-image {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.top-doctors-card .top-doctor-image img {
+    height: 90px;
+    width: 90px;
+    background-color: var(--primary-white);
+    border-radius: 50%;
+
+}
+
+.top-doctors-card .top-doctor-name p {
+    font-size: 12px;
+}
+
+
+.top-doctor-rate-location {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top-doctor-rate-location>div {
+    display: flex;
+    max-width: fit-content;
+    font-size: 12px;
+    ;
+}
+
+.top-doctor-rate-location>div:last-child {
+    margin-left: 12px;
+
+}
+
+
+.top-doctor-rate-location .doctor-star {
+    color: var(--primary-green);
+    background: rgb(230, 243, 237);
+}
+
+.top-doctor-rate-location>.doctors-location {
+    margin-left: 2px;
+    background: rgb(230, 243, 237);
+    color: gray;
+}
+
+/*--health article*/
+.health-article {
+    margin-bottom: 110px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.health-article-card {
+    width: 100%;
+    background: var(--primary-white);
+    height:12vh;
+}
+
+.health-article .card-img img {
+    aspect-ratio: 16/9;
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+
+/*--- home navbar -----*/
+.mobile-navbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-evenly;
+    background-color: var(--primary-white);
+    box-shadow: var(--box-shadow);
+    height: 7%;
+    align-items: center;
+}
+
+.mobile-navbar i {
+    font-size: 1.3rem;
+}
+
+.mobile-navbar i:hover,
+.mobile-navbar i:active {
+    color: var(--primary-green);
+    transform: scale(1.2);
+}
+
+
+
+
+/* ------------------------------ */
+/*  Media Queries*/
+
+
+/* ------------Tablet------------------ */
+@media (max-width:968px) and (min-width:768px) {
+    .landing-slideshow .slide-images .slide-show-image {
+        width: 100%;
+    }
+
+    .descr-adv {
+        display: block;
+    }
+}
+
+/* ------------TLAptop------------------ */
+@media screen and (min-width:968px) {
+    .login {
+        width: 30%;
+        margin: 4% auto;
+    }
+
+    .landing-search {
+        display: none;
+    }
+
+    .landing-header {
+        background: rgba(249, 246, 246, 0.98);
+        padding: 7px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .landing-header .landing-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .landing-header .landing-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .landing-header .landing-nav ul li {
+        list-style: none;
+        font-size: 18px;
+        padding: 6px 4px;
+        text-transform: uppercase;
+        color: var(--primary-green);
+    }
+
+    .landing-header .landing-nav ul li:hover,
+    .header-message i {
+        cursor: pointer;
+
+    }
+
+    .landing-header .landing-nav ul li:not(:first-child) {
+        margin-left: 12px
+    }
+
+    .landing-header .header-message .fa-bars {
+        display: none;
+    }
+
+    .header-message input {
+        display: inline;
+        padding: 12px;
+        background: rgba(218, 208, 218, 0.768);
+        border: none;
+        margin-right: 24px;
+        border-radius: 12px;
+    }
+
+    .landing-slideshow .slide-images .landing-img-text,
+    .slide-show-image {
+        width: auto;
+        object-fit: contain;
+    }
+
+    .landing-slideshow .slide-images .landing-img-text {
+        position: static;
+        font-size: 38px;
+    }
+
+    .landing-slideshow .slide-images .slide-show-image {
+        width: 40%;
+    }
+
+    .descr-img img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .descr-adv {
+        display: block;
+    }
+
+    /*--- home navbar -----*/
+    .mobile-navbar {
+        display: none;
+    }
 }
