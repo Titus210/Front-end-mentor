@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <!-- Css Link-->
+    <!-- Css Link-->
     <link rel="stylesheet" href="../CSS/landing.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Create account</title>
 </head>
+
 <body>
-        <div class="login">
-            <div class="login-header">
-                <i class="fa fa-arrow-left"></i>
-                <p>Login</p>
-            </div>
-            <div class="form-login">
-                <form action="">
-                    <input type="text" placeholder="Enter your email">
-                    <input type="password" name="password" id="password" placeholder="Enter your password">
-                    <p id="forgot-password">forgot password</p>
-                    <p id="submit-login">Login</p>
-                </form>
-                <p class="create-account">Don't have an account? <a href="../HTML/signUp..html">Sign Up</a></p>
-            </div>
-        
-            <div class="login-socials">
-                <p><span> or </span></p>
-                <div class="apple-login">
-                    <i class="fa-brands fa-apple"></i>
-                    <p>Sign in with Apple </p>
-                </div>
-                <div class="google-login">
-                    <i class="fa-brands fa-google"></i>
-                    <p> Sign in with Google </p>
-                </div>
-                <div class="facebook-login">
-                    <i class="fa-brands fa-facebook"></i>
-                    <p> Sign in with Facebook </p>
-                </div>
-        
-            </div>
+    <div class="login">
+        <div class="login-header">
+            <i class="fa fa-arrow-left"></i>
+            <p>Login</p>
         </div>
+        <div class="form-login">
+            <form action="">
+                <input type="text" placeholder="Enter Full Name">
+                <input type="text" placeholder="Enter your email">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <input type="password" name="password" id="password" placeholder="Confirm password">
+
+                <div class="terms-condition">
+                    <input type="checkbox" name="" id="">
+                    <p>I agree to the <a href="">Terms of Service</a> and <a href="">Private Policy</a>
+                    </p>
+                </div>
+                <p id="submit-login" onclick="location.href ='../HTML/LandingPage.html'">Create account</p>
+            </form>
+            <p class="create-account">Have an account? <a href="../HTML/Login.html">Login</a></p>
+        </div>
+
+    </div>
 </body>
+
 </html>
