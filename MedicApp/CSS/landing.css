@@ -530,24 +530,46 @@
 }
 
 /*--health article*/
+
 .health-article {
     margin-bottom: 110px;
     flex-wrap: wrap;
     width: 100%;
 }
 
+.health-article-card-wrapper {
+    margin-top: 12px;
+}
+
 .health-article-card {
     width: 100%;
     background: var(--primary-white);
-    height:12vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2px;
+    box-shadow: var(--box-shadow);
 }
+
+.health-article-card:not(:last-child) {
+    margin-bottom: 6px;
+    box-shadow: var(--box-shadow);
+}
+
 
 .health-article .card-img img {
     aspect-ratio: 16/9;
-    inline-size: 100%;
+    height: 80px;
     object-fit: cover;
 }
 
+.article-content {
+    width: 60%;
+
+}
+
+.article-content p {
+    font-size: 12px;
+}
 
 /*--- home navbar -----*/
 .mobile-navbar {
@@ -671,6 +693,11 @@
 
     .descr-adv {
         display: block;
+    }
+
+    .health-article-card {
+        width: 40%;
+
     }
 
     /*--- home navbar -----*/
