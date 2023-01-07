@@ -11,4 +11,7 @@ The code has responsive nav bar that is controlled using two `font awesome `
 - divs
 The page is a single page with different divs that hold different sections of the page and wrapped in a `main` function.
 - responsiveness
-Screen less than `768px` have responsive viw
+Screen less than `768px` have responsive view
+Where navbar is collapsed and using JavaScript we display the sidenav using `position: absolute;`
+ ## Hosting
+The code is hosted in [Netify.com](www.netify.com)
