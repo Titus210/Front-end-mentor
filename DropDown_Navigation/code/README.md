@@ -14,4 +14,4 @@ The page is a single page with different divs that hold different sections of th
 Screen less than `768px` have responsive view
 Where navbar is collapsed and using JavaScript we display the sidenav using `position: absolute;`
  ## Hosting
-The code is hosted in [Netify.com](www.netify.com)
+The code is hosted in [Netify.com](https://www.netlify.com/)
