@@ -1,0 +1,386 @@
+:root {
+    --gray: rgba(206, 199, 199, 0.8);
+    --black: #111111
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+
+.header-wrapper {
+    display: flex;
+}
+
+
+.navigation,
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.logo img {
+    margin: auto 12px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 12px;
+    padding-top: 16px;
+}
+
+ul {
+    display: flex;
+}
+
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    cursor: pointer
+}
+
+
+.navigation ul li:not(:last-child),
+.account ul li:not(:last-child) {
+    margin-right: 12px;
+}
+
+.navigation ul li:nth-child(3) p {
+    color: var(--gray)
+}
+
+/*-- Drop Down */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #111;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #7b7878;
+}
+
+.dropdown-content a img {
+    margin-right: 6px;
+    height: 12px;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.fa-angle-up {
+    font-size: 14px;
+}
+
+.features .fa-angle-down,
+.company .fa-angle-down {
+    display: none;
+}
+
+.features:hover .fa-angle-down,
+.company:hover .fa-angle-down {
+    display: inline;
+}
+
+.features:hover .fa-angle-up,
+.company:hover .fa-angle-up {
+    display: none;
+}
+
+.company:hover .fa-angle-up {
+    display: none;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account ul li {
+    padding: 4px 2px;
+    text-align: center
+}
+
+.account ul li:last-child {
+    border: 1px solid #111;
+    padding: 4px 5px;
+    border-radius: 12px;
+}
+
+.account i {
+    display: none;
+}
+
+#fa-bars,
+#fa-times {
+    display: none;
+}
+
+/* content */
+.content {
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.content .text {
+    width: 55%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+.content .text div:first-child h1 {
+    font-size: 46px;
+}
+
+.content .text .button-wrapper {
+    width: auto;
+}
+
+.content .text .button-wrapper p {
+    background: var(--black);
+    width: 27%;
+    color: #fff;
+    padding: 12px 8px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.content .text .content-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .text .content-icons .icons img {
+    height: 18px;
+}
+
+
+.content .image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image img {
+    height: 70%;
+    width: 60%;
+
+}
+
+
+/* small screen Media query */
+
+@media screen and (max-width: 768px) {
+
+    /* display logo */
+
+    .logo {
+        display: block;
+        position: absolute;
+        top: 0%;
+
+
+    }
+
+
+    /* header */
+    header {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 60vw;
+        bottom: 0;
+        top: 0;
+        background-color: rgb(248, 247, 247);
+
+        justify-content: center;
+    }
+
+
+    /* buttons to open and side navbar */
+    #fa-bars,
+    #fa-times {
+        display: block;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+    }
+
+    #fa-times {
+        display: none;
+    }
+
+
+    /* display nav list in column form */
+
+    .navigation .nav-list ul {
+
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: absolute;
+        right: 20%;
+        top: 6%;
+
+        padding: 10px;
+    }
+
+    .navigation .nav-list ul li {
+        font-size: 22px;
+
+    }
+
+    .navigation ul :not(:first-child) {
+        margin-top: 12px;
+
+    }
+
+
+    .navigation ul li:nth-child(3) p {
+        color: black;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+
+        background-color: inherit;
+        min-width: max-content;
+        box-shadow: none;
+        z-index: 3;
+    }
+
+
+    .account {
+        justify-self: center;
+        width: 100%;
+        position:absolute;
+        bottom: 14%;
+
+
+    }
+
+    .account ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .account ul li {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 8px 0px;
+
+    }
+
+    .account ul li:last-child {
+        border: 1px solid #111;
+        padding: 8px 11px;
+        border-radius: 12px;
+    }
+
+    .account i {
+        display: inline;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .content .text {
+        width: 90%;
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content .text div:first-child h1 {
+        font-size: 28px;
+    }
+
+    .remote {
+        display: none;
+    }
+
+    .content .image {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12%;
+        margin-bottom: 12px;
+        height: 60%
+    }
+
+    .content .text .button-wrapper {
+        width: 100%;
+    }
+
+    .content .text .button-wrapper p {
+        width: 30%;
+    }
+
+    .content .image img {
+        width: 90%;
+        height: 100%;
+
+    }
+}
