@@ -54,9 +54,6 @@ dropdown.addEventListener("click", function () {
     if (dropdown.style.display == "none") {
         dropdown.style.display = "block";
     }
-    else if (dropdown.style.display = "block") {
-        dropdown.style.display = "none";
-    }
     else
         dropdown.style.display = "block";
 }
