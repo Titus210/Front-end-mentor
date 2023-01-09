@@ -1,0 +1,84 @@
+
+.mario {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grass,
+.road,
+.sky {
+    width: 100%;
+    position: relative;
+}
+
+.sky {
+    height: 60%;
+    background: skyblue;
+}
+
+.grass {
+    height: 20%;
+    background: seagreen;
+}
+
+.road {
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.road-lines {
+    box-sizing: border-box;
+    border: 2px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 30%
+}
+
+.road .mario-image img {
+    height: 40px;
+
+}
+
+.mario-i {
+    position: absolute;
+    left: 0;
+    top: 2%;
+    animation-name: runMario;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-timing-function: cubic-bezier(.51, -0.39, .24, 1.1);
+}
+
+.mario-j {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    animation-name: runMario;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(.51, -0.39, .24, 1.1);
+}
+
+/* KEYFRAMES */
+
+@keyframes runMario {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(110vw);
+    }
+}
