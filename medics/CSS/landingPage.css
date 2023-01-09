@@ -1,6 +1,7 @@
 .landing-page {
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
 
@@ -165,18 +166,114 @@
 /* .landing-header > div:not(:first-child){
     display: none;
 } */
+
+
+/* Doctor slider */
+.doctor-slideshow-wrapper {
+    margin-top: 18px;
+    padding: 0 5px 14px;
+
+    overflow: hidden;
+}
+
+.doctor-slideshow-wrapper .doctor-slideshow {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.doctor-slideshow-wrapper .doctor-slideshow .image {
+    flex: 0 0 auto;
+    width: 22%;
+}
+
+
+.doctor-slideshow-wrapper .doctor-slideshow img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid var(--blue);
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .doctor-slideshow-wrapper .doctor-slideshow .image {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .doctor-slideshow-wrapper .doctor-slideshow img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1100px) {
+    .doctor-slideshow-wrapper .doctor-slideshow .image {
+        flex: 0 0 auto;
+        width: 12%;
+    }
+
+    .doctor-slideshow-wrapper .doctor-slideshow img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+
+/* small screen header */
+
 @media screen and (max-width: 768px) {
     .mobile-nav-icons {
         display: flex;
+        /* position: absolute; */
+        top: 12px;
     }
+
 
     .landing-header .nav-items,
     .landing-header .search {
         display: none;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 24px;
     }
+
+    /* .logo {
+        position: absolute;
+        left: 12px;
+
+
+    }
+
+    .landing-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .landing-header .nav-items,
+    .landing-header .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 24px;
+    }
+
+    .search .search-input {
+        position: absolute;
+        top: 12px;
+        left: 30%;
+    } */
 
     /* notifications */
     .mobile-nav-icons .notification .notification-no {
         right: 5px;
     }
+
 }
