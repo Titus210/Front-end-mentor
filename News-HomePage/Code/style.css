@@ -109,7 +109,7 @@ main {
 }
 
 .news-content .content-image .image-wrapper {
-    background: url("../assets/images/image-web-3-mobile.jpg");
+    background: url("./images/image-web-3-mobile.jpg");
     width: 100%;
     height: 100%;
 }
@@ -231,15 +231,27 @@ main {
 }
 
 .showcase .news-showcase>div .pc-image {
-    background: url(../assets/images/image-retro-pcs.jpg);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: auto;
     width: 30%;
-
 }
 
+
+.showcase .news-showcase.item-1 .pc-image {
+    background: url(./images/image-retro-pcs.jpg);
+
+}
+.showcase .news-showcase.item-2 .pc-image {
+    background: url(./images/image-top-laptops.jpg);
+
+}
+.showcase .news-showcase.item-3 .pc-image {
+    background: url(./images/image-gaming-growth.jpg);
+
+}
 .showcase .news-showcase .text-content {
     display: flex;
     flex-direction: column;
@@ -289,7 +301,7 @@ main {
     }
 
     .news-content .content-image .image-wrapper {
-        background: url("../assets/images/image-web-3-desktop.jpg");
+        background: url("./images/image-web-3-desktop.jpg");
         background-size: cover;
         background-position: center;
 
