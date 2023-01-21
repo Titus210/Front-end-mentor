@@ -167,6 +167,10 @@
     display: none;
 } */
 
+.landing-items-wrapper {
+    padding: 0px 14px;
+
+}
 
 /* Doctor slider */
 .doctor-slideshow-wrapper {
@@ -194,12 +198,105 @@
     border: 4px solid var(--blue);
 }
 
+/* Landing health article */
+.landing-health-article {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    border-radius: 12px;
+
+}
+
+.landing-health-article .article-text .learn-more {
+    background-color: var(--blue);
+    padding: 5px 8px;
+    text-align: center;
+    width: 45%;
+    margin: 8px auto;
+    color: var(--white);
+    border-radius: 14px;
+}
+
+.landing-health-article .article-text {
+    width: initial;
+    padding: 4px;
+}
+
+.landing-health-article .article-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.landing-health-article .article-image img {
+    height: 12vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 12%;
+    margin: 12px 0px;
+
+}
+
+
+/* Top Doctors */
+.top-doctors {
+    margin-top: 12px;
+}
+
+.top-doctors .doctor-header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.top-doctors .doctor-card-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f2472c;
+
+}
+
+.top-doctors .doctor-card-wrapper .doctor-card {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+    width:50%;
+    background-color: #f2472c;
+}
+
+.top-doctors .doctor-card-wrapper .doctor-card:not(:first-child) {
+    margin-left: 14px;
+}
+
+
+
+.top-doctors .doctor-card-wrapper .doctor-card .image {
+    height: 50%
+}
+
+.top-doctors .doctor-card-wrapper .doctor-card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-doctors .doctor-card-wrapper .doctor-card .image-description {
+    height: 50%;
+}
+
+/* ---- MEDIA QUERIES -----------*/
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .doctor-slideshow-wrapper .doctor-slideshow .image {
         flex: 0 0 auto;
-        width: 15%;
+        width: 14%;
     }
 
     .doctor-slideshow-wrapper .doctor-slideshow img {
@@ -207,13 +304,35 @@
         height: 100px;
         border-radius: 50%;
     }
+
+    /* Landing health article */
+    .landing-health-article .article-text {
+        width: 70%;
+    }
+
+    .landing-health-article .article-image {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing-health-article .article-image img {
+        height: 15vh;
+        width: 20vw;
+        object-fit: cover;
+        border-radius: 12%;
+        margin-top: 12px;
+
+    }
+
 }
 
 /* laptop */
 @media screen and (min-width: 1100px) {
     .doctor-slideshow-wrapper .doctor-slideshow .image {
         flex: 0 0 auto;
-        width: 12%;
+        width: 10%;
     }
 
     .doctor-slideshow-wrapper .doctor-slideshow img {
@@ -221,6 +340,41 @@
         height: 100px;
         border-radius: 50%;
     }
+
+
+    /* Landing health article */
+    .landing-health-article .article-text {
+        text-align: center;
+        width: 70%;
+    }
+
+    .landing-health-article .article-image {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing-health-article .article-image img {
+        height: 25vh;
+        width: 20vw;
+        object-fit: contain;
+        margin-top: 12px;
+
+    }
+
+    .landing-health-article .article-text h3 {
+        font-size: 28px;
+    }
+
+    .landing-health-article .article-text .learn-more {
+        font-size: 18px;
+        width: 25%;
+
+    }
+
+
+
 }
 
 
