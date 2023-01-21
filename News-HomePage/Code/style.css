@@ -230,8 +230,10 @@ main {
     margin: 8px 0px;
 }
 
-.showcase .news-showcase>div .pc-image {
 
+
+.showcase .news-showcase .item-1 .pc-image {
+    background: url(./images/image-retro-pcs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -239,18 +241,25 @@ main {
     width: 30%;
 }
 
-
-.showcase .news-showcase .item-1 .pc-image {
-    background: url(./images/image-retro-pcs.jpg);
-
-}
 .showcase .news-showcase .item-2 .pc-image {
     background: url(./images/image-top-laptops.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    width: 30%;
 
 }
+
 .showcase .news-showcase .item-3 .pc-image {
     background: url(./images/image-gaming-growth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    width: 30%;
 }
+
 .showcase .news-showcase .text-content {
     display: flex;
     flex-direction: column;
