@@ -240,17 +240,16 @@ main {
 }
 
 
-.showcase .news-showcase.item-1 .pc-image {
+.showcase .news-showcase .item-1 .pc-image {
     background: url(./images/image-retro-pcs.jpg);
 
 }
-.showcase .news-showcase.item-2 .pc-image {
+.showcase .news-showcase .item-2 .pc-image {
     background: url(./images/image-top-laptops.jpg);
 
 }
-.showcase .news-showcase.item-3 .pc-image {
+.showcase .news-showcase .item-3 .pc-image {
     background: url(./images/image-gaming-growth.jpg);
-
 }
 .showcase .news-showcase .text-content {
     display: flex;
