@@ -84,6 +84,7 @@ main {
 
 .navbar-header .fa-menu {
     display: none;
+    transition: .3s;
 }
 
 .navbar-header .fa-close {
@@ -293,8 +294,7 @@ main {
     .news-content {
         flex-direction: row;
         position: relative;
-        margin-top: 20px;
-        ;
+        margin-top: 20px;        
 
     }
 

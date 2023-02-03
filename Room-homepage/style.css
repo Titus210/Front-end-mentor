@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-grey: hsl(0, 0%, 27%);
+
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* font */
+    --font-size: 12px;
+
+    --font-family: 'League Spartan', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.furniture-header {
+    background-color: var(--dark-gray);
+    background: url("./images/mobile-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.furniture-header .nav-link {
+    display: flex;
+    padding: 14px 10px;
+
+}
+
+
+.furniture-header .nav-link .nav-icons .fa-bars {
+    display: block;
+}
+
+.furniture-header .nav-link .nav-icons .fa-close {
+    display: none;
+}
+
+.furniture-header .nav-link .nav-icons .fa-menu {
+    margin-right: 5%;
+    position:relative;  
+}
+
+.furniture-header .nav-link .nav-icons,
+.furniture-header .nav-link .nav-items {
+    display: flex;
+}
+
+
+.furniture-header .nav-link .nav-items {
+
+    position: absolute;
+    background-color: var(--white);
+    left: 8%;
+    padding: 12px;
+    top: 2px;
+    right: 0;
+    height:2vh;
+}
+
+.furniture-header .nav-link .nav-items a {
+    color: var(--black);
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.furniture-header .nav-link .logo {
+    margin-left: 44%;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.furniture-header .nav-link .logo,
+.furniture-header .nav-icons {
+    color: var(--white)
+}
+
+.furniture-header .horizontal-scroll {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    background-color: var(--black);
+    width: 15%;
+
+    margin: 0px 10px;
+}
+
+.furniture-header .horizontal-scroll img {
+
+    padding: 8px;
+    margin: auto;
+}
+
+.furniture-header .horizontal-scroll img:hover {
+    background: var(--dark-gray)
+}
+
+/* Inovative decorate */
+.innovative-decorate {
+    margin: 12px 14px;
+    padding: 20px;
+}
+
+.innovative-decorate h1 {
+    font-weight: 600;
+}
+
+.innovative-decorate p {
+    color: var(--dark-gray);
+    font-size: var(--font-size);
+
+}
+
+.innovative-decorate p:hover {
+    cursor: pointer;
+
+}
+
+.innovative-decorate .shop-now {
+    margin-top: 10px;
+    letter-spacing: 10px;
+    font-size: 16px;
+    color: var(--black)
+}
+
+
+.room-furniture {
+    background: url("./images/image-about-dark.jpg");
+}
+
+.room-furniture-dull {
+    background: url("./images/image-about-light.jpg");
+}
+
+.room-furniture,
+.room-furniture-dull {
+    background-color: var(--dark-gray);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+}
+
+.room-about {
+
+    margin: 12px 14px;
+    padding: 20px;
+}
+
+.room-about h1 {
+    font-size: 14px;
+}
+
+.room-about p {
+    color: var(--dark-gray);
+    font-size: 14px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 95vh;
+    }
+
+    .furniture-header .nav-link {
+        display: flex;
+    }
+
+    .furniture-header .nav-link .nav-icons {
+        display: none;
+    }
+
+    .furniture-header .nav-link .nav-items {
+        display: flex;
+        position: relative;
+        background-color: initial;
+        padding: 0;
+    }
+
+
+    .furniture-header .nav-link .nav-items a {
+        color: var(--white);
+
+    }
+
+    .furniture-header .nav-link .nav-items a:hover {
+        text-decoration: underline;
+        margin-top: 1px;
+    }
+
+    .furniture-header .nav-link .nav-items a:not(:last-child) {
+        margin-right: 12px;
+
+    }
+
+    .furniture-header .nav-link .logo,
+    .furniture-header .nav-link .nav-items {
+        margin-left: 4%;
+
+    }
+
+    .header,
+    .about {
+        display: flex;
+        height: 50%;
+    }
+
+    .furniture-header {
+        width: 100%;
+    }
+
+    .innovative-decorate,
+    .room-about {
+        margin: 0px;
+        padding: 0;
+    }
+
+    /* Inovative decorate */
+    .innovative-decorate {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        margin: 0px 30px;
+        padding: 0px 70px;
+        width: 70%;
+    }
+
+    .room-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0px 20px;
+        padding: 0px 20px;
+
+    }
+
+    .innovative-decorate h1 {
+        font-size: 28px;
+    }
+
+    .room-about h1 {
+        font-size: 16px;
+    }
+
+    .room-furniture,
+    .furniture-header,
+    .room-furniture-dull {
+        height: 100%
+    }
+}

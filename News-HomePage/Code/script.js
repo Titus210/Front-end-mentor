@@ -12,7 +12,7 @@ function checkOpen(){
 function checkClose(){
     navBar.style.display = "none";
     close.style.display = "none";
-    open.style.display = "flex";
+    open.style.display = "flex";   
 }
 
 open.addEventListener("click", checkOpen);
