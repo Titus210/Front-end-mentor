@@ -1,0 +1,19 @@
+:root {
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* Colors */
+    --desat-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-gray-red: hsl(0, 6%, 24%);
+
+    /* Gradient */
+    --linear-1: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --linear-2: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+
+    /* Font*/
+    --main-font: 16px;
+    --font-weight-1: 300;
+    --font-weight-1: 400;
+    --font-weight-1: 600;
+}
