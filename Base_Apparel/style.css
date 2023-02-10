@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Serif+JP:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
+
 :root {
     --mobile: 375px;
     --desktop: 1440px;
@@ -14,6 +16,272 @@
     /* Font*/
     --main-font: 16px;
     --font-weight-1: 300;
-    --font-weight-1: 400;
-    --font-weight-1: 600;
+    --font-weight-2: 400;
+    --font-weight-3: 600;
+    --font-1: 'Montserrat', sans-serif;
+    --font-2: 'Noto Serif JP', serif;
+    --font-3: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--linear-1);
+    font-size: var(--main-font);
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* text */
+.text {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.text>div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text .coming-soon {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text .coming-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.text .coming-soon .coming-header h1 {
+    font-size: 32px;
+    font-family: var(--font-1);
+
+    letter-spacing: 12px;
+}
+
+.text .coming-soon .coming-header h1 span {
+    font-size: 28px;
+    font-family: var(--font-1);
+    color: var(--desat-red);
+    font-weight: var(--font-weight-1);
+}
+
+.text .coming-soon .coming-text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.text .coming-soon .coming-text p {
+    color: var(--desat-red)
+}
+
+.text .subscription-wrapper {
+    margin-top: 20px;
+}
+
+.text .subscription-wrapper .input-wrapper {
+    display: flex;
+
+}
+
+.text .subscription-wrapper .input-wrapper .input {
+    width: 100%;
+
+}
+
+.text .subscription-wrapper .input-wrapper .input input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 22px;
+    outline: none;
+    border: 1px solid var(--desat-red);
+}
+
+.text .subscription-wrapper .input-wrapper .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 11%;
+
+
+}
+
+.text .subscription-wrapper .input-wrapper .icons .warning-icons {}
+
+.text .subscription-wrapper .input-wrapper .icons .arrow-icon {
+    background-color: var(--desat-red);
+
+
+    height: 20px;
+    width: 20px;
+    padding: 9px 17px;
+
+    border-radius: 32%;
+    margin-left: 10px;
+}
+
+.text .subscription-wrapper .input-wrapper .icons .arrow-icon:hover {
+    box-shadow: var(--linear-2);
+    transform: scale(120px);
+    cursor: pointer;
+
+    background:var(--dark-gray-red)
+ }
+
+.subscription-wrapper>p {
+    margin-left: 10px;
+    color: var(--soft-red)
+}
+
+
+
+/* image */
+.desktop {
+    display: none;
+}
+
+.image .logo {
+    padding: 10px 30px;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height:100%;
+
+}
+
+
+
+/* Media Queries */
+@media (min-width: 968px) {
+
+    main {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    section {
+        height: 90%;
+    }
+
+
+    .text .coming-soon {
+        width: 70%;
+
+    }
+
+
+    .text .coming-soon .coming-header h1 {
+        font-size: 48px;
+
+    }
+
+    .text .coming-soon .coming-header h1 span {
+        font-size: 48px;
+
+    }
+
+    .text .coming-soon .coming-header p {
+        font-size: 28px;
+
+    }
+
+
+
+    .text .coming-header {
+        text-align: start;
+        align-items: flex-start;
+    }
+
+
+    .text .coming-soon .coming-text {
+        text-align: start;
+        word-spacing: 6px;
+        font-family: var(--font-1);
+
+    }
+
+
+
+    .text .subscription-wrapper .input-wrapper .input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .text .subscription-wrapper .input-wrapper .input input {
+        padding: 16px;
+    }
+
+    .text .subscription-wrapper .input-wrapper .input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .text .subscription-wrapper .input-wrapper .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: -12%;
+
+    }
+
+
+    .text .subscription-wrapper .input-wrapper .icons .arrow-icon {
+        padding: 15px 28px;
+        border-radius:;
+
+        height: 20px;
+        width: 20px;
+    }
+
+    .subscription-wrapper>p {
+      text-align: center;
+    }
+
+    /* image */
+    .image .logo {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+
+
 }
