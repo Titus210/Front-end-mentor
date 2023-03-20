@@ -251,45 +251,6 @@
     color: var(--blue);
     font-weight: 700;
 }
-
-.top-doctors .doctor-card-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #f2472c;
-
-}
-
-.top-doctors .doctor-card-wrapper .doctor-card {
-    display: flex;
-    flex-direction: column;
-
-    border: 1px solid black;
-    width:50%;
-    background-color: #f2472c;
-}
-
-.top-doctors .doctor-card-wrapper .doctor-card:not(:first-child) {
-    margin-left: 14px;
-}
-
-
-
-.top-doctors .doctor-card-wrapper .doctor-card .image {
-    height: 50%
-}
-
-.top-doctors .doctor-card-wrapper .doctor-card .image img {
-    width: 100%;
-    height: 100%;
-}
-
-.top-doctors .doctor-card-wrapper .doctor-card .image-description {
-    height: 50%;
-}
-
 /* ---- MEDIA QUERIES -----------*/
 
 /* tablet */
