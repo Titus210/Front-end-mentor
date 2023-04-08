@@ -1,6 +1,6 @@
 {
   "name": "event-management-website",
-  "tailwindcss": "^3.3.1",
+  "version": "1.0.0",
   "main": "index.css",
   "description": "",
   "scripts": {
@@ -13,4 +13,4 @@
   "devDependencies": {
     "tailwindcss": "^3.3.1"
   }
-}
+} 
