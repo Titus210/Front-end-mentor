@@ -164,7 +164,7 @@ span {
 
 .heading {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .about-content h2 {
@@ -186,7 +186,6 @@ span {
 
 .services h2 {
     margin-bottom: 2rem;
-    font-size: 1.2rem;
 }
 
 .services-container {
@@ -225,4 +224,19 @@ span {
 .services-box p {
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
+}
+
+/* Protfolio */
+
+.portfolio {
+    background: var(--second-bg-color);
+
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.porfolio-container {
+    display:grid;
 }
