@@ -1,0 +1,142 @@
+:root {
+    /* Break points */
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* Colors */
+    --veryDarkDesatBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+
+    /*Background Gradient Colors */
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+    /* Text colors */
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+
+    /* Typography */
+    --font-size: 12px;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--softViolet);
+}
+
+.faq-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-container {
+    background: white;
+    height: 80vh;
+    width: 90vw;
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    border-radius: 22px;
+}
+
+.faq-image .desktop {
+    display: none;
+}
+
+
+.faq-container .faq-image img {
+    width: 80%;
+}
+
+.faq-container .faq-image {
+    position: relative;
+    top: -18%;
+}
+
+/* FAQ test */
+.faq-container .faq-text {
+    position: relative;
+    top: -17%;
+}
+
+.faq-container .faq-text>h1 {
+    text-align: center;
+    color: var(--veryDarkDesatBlue);
+}
+
+.faq-container .faq-text>div {
+    padding: 20px;
+}
+
+.faq-container .faq-text>div .text-header {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-container .faq-text>div>p {
+    display: none;
+}
+
+/* =================================================================
+                    MEDIA QUERY
+-================================================-=================*/
+@media (min-width:768px) {
+
+    /* Hide image */
+    .faq-image .desktop {
+        display: block;
+    }
+
+    .faq-image .mobile {
+        display: none;
+    }
+
+    .faq-container {
+        background: white;
+        height: 60vh;
+        width: 60vw;
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .faq-container {
+        flex-direction: row;
+        position: static;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-container .faq-text,
+    .faq-container .faq-image {
+        position: static;
+    }
+
+    .faq-container .faq-text {
+        width: 55%;
+    }
+
+    .faq-container .faq-image {
+        position: relative;
+        left: -18%;
+        top: 1%;
+    }
+
+}
