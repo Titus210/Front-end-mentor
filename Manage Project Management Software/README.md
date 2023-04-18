@@ -9,6 +9,8 @@ The challenge of this project was to create a project management website that is
 
 ## Screenshot
 ![MOBILE](./img/mobile-Screenshot.PNG)
+<br/>
+<br/>
 ![DESKTOP](./img/desk-top.PNG)
 
 ## Link
