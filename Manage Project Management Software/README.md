@@ -14,7 +14,8 @@ The challenge of this project was to create a project management website that is
 ![DESKTOP](./img/desk-top.PNG)
 
 ## Link
-
+- [Github Repository](https://github.com/Titus210/Front-end-mentor/tree/master/Manage%20Project%20Management%20Software)
+- [Live Site](https://dynamic-gingersnap-a954c6.netlify.app/)
 ## How to setup
 To set up the Manage website on your local machine, follow these steps:
 1. Clone the repository to your local machine using the command:
