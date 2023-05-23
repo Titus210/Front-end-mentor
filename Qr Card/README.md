@@ -18,6 +18,7 @@ This is a coded solution for the Front end mentor qrcode component, its a respon
 
 ![Final solution](./images/completed-image.png)
 
+
 This is the Final solution screenshot
 
 ### Links
