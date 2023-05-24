@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator | Front-end Mentor</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container-wrapper">
+        <!--Dates input-->
+        <div class="dates-wrapper">
+          <!--Day-->
+          <div class="day">
+            <p class="dates-text">Day</p>
+            <input type="text" name="" id="day-input" class="dates-input"/>
+          </div>
+          <!--Month-->
+          <div class="month">
+            <p class="dates-text">Month</p>
+            <input type="text" name="" id="month-input" class="dates-input"/>
+          </div>
+          <!--Year-->
+          <div class="year">
+            <p class="dates-text">Year</p>
+            <input type="text" name="" id="year-input" class="dates-input"/>
+          </div>
+        </div>
+
+        <!--Horizontal rule-->
+        <div class="line">
+          <hr />
+          <p>
+            <img src="./image/icon-arrow.svg" alt="button" />
+          </p>
+        </div>
+
+        <!-- Dates output -->
+        <div class="dates-output">
+          <p><span id="years-output">--</span> years</p>
+          <p><span id="years-output">--</span> months</p>
+          <p><span id="years-output">--</span> days</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
