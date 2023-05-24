@@ -146,8 +146,9 @@ main {
 }
 
 /* Errors */
-.error-valid-text, .error-field-required{
-    margin-top: 2px;
+.error-valid-text,  .error-field-required{
+    display:none;
+        margin-top: 2px;
     font-size: 1.0rem;
     color:var(--light-red);
 }
