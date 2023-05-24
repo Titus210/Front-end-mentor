@@ -1,5 +1,5 @@
 /* Google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 
 /* colors */
 /*
@@ -19,94 +19,177 @@
 - Off black: hsl(0, 0%, 8%)
 
 */
-:root{
---purple: hsl(259, 100%, 65%);
---light-red: hsl(0, 100%, 67%);
---white: hsl(0, 0%, 100%);
---off-white: hsl(0, 0%, 94%);
---light-grey: hsl(0, 0%, 86%);
---smokey-grey: hsl(0, 1%, 44%);
---off-black: hsl(0, 0%, 8%);
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
 
---font-1: 'Poppins', sans-serif;
+  --font-1: "Poppins", sans-serif;
 }
 
-
 /* universal selector */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* body */
-body{
-    font-family: var(--font-1);
-    font-size: 15px;
+body {
+  font-family: var(--font-1);
+  font-size: 15px;
 }
 
-main{
-    min-width: 100vh;
-    min-height: 100vh;
+main {
+   min-height: 100vh;
+   width: 100vw;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background-color:var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--off-white);
 }
 
-.container-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background-color: var(--white);
+  background-color: var(--white);
+  padding: 20px 10px;
 
-    height:600px;
-    width: 700px;
+  height: max-content;
+  width: 700px;
 
-    border-radius: 13px;
-    border-bottom-right-radius: 35%;
+  border-radius: 13px;
+  border-bottom-right-radius: 35%;
 }
 
-.dates-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+.dates-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  align-self: flex-start;
 
-    margin-left: 1px;
-    width: 90%;
+  margin-left: 46px;
+  width: 85%;
 }
 
+.dates-input {
+  padding: 16px 2px;
+  width: 80%;
 
-.dates-input{
-    padding:16px 2px;
-    width: 75%;
-    
+  border-radius: 8px;
 
-    border-radius: 8px;
-    
-    border: 0.2px solid var(--smokey-grey);
+  border: 0.2px solid var(--smokey-grey);
 
-    font-size: 1.8rem;
-    font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
-.dates-text{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 800;
+.dates-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
 
-    color:var(--smokey-grey)
+  color: var(--smokey-grey);
 }
 
 /* horizontal rule */
-.line{
-    width: 90%;
-    margin:10px 0;
+.line {
+  width: 90%;
+  margin: 40px 0;
+
+  position: relative;
 }
-.line hr{
-    color:var(--smokey-grey);
-    height:
+.line .horizontal-line {
+  height: 2px;
+  background-color: var(--light-grey);
+}
+
+.line p {
+  position: absolute;
+  right: 8px;
+  top: -42px;
+  background-color: var(--purple);
+
+  padding: 18px;
+  border-radius: 50%;
+}
+
+.line p:hover{
+    cursor: pointer;
+    background-color: var(--off-black);
+}
+
+/* Dates output */
+.dates-output {
+  align-self: start;
+  margin-left: 20px;
+}
+
+.dates-output p {
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: var(--off-black);
+  font-style: italic;
+}
+
+.dates-output p span {
+  color: var(--purple);
+  font-weight: 800;
+}
+
+/* Errors */
+.error-valid-text, .error-field-required{
+    margin-top: 2px;
+    font-size: 1.0rem;
+    color:var(--light-red);
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    height: 100vh;
+    max-width: 100vw;
+
+  }
+
+  .container-wrapper {
+    height: max-content;
+    width: 90%;
+  }
+
+  .dates-wrapper {
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .dates-text {
+    font-size: 0.9rem;
+  }
+
+  .dates-input {
+    width: 90%;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+  }
+
+  .line p {
+    right: 30%;
+  }
+
+  .dates-output p {
+    font-size: 2.6rem;
+  }
+
+  /* Errors */
+  .error-valid-text, .error-field-required{
+    font-size: 0.5rem;
+}
 }
