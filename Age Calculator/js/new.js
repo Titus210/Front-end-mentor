@@ -63,9 +63,11 @@ function validateYear() {
 /* validate month */
 function validateMonth() {
   var month = parseInt(month_input.value);
+  var day = parseInt(day_input.value);
+  var date_error = document.getElementById("date-error-valid-text");
 
   // Check if month is empty
-  if (isNaN(month)) {
+  if (isNaN(month) || month === "") {
     empty_month.style.display = "block";
   } else {
     empty_month.style.display = "none";
@@ -76,6 +78,38 @@ function validateMonth() {
     month_error.style.display = "block";
   } else {
     month_error.style.display = "none";
+  }
+
+  // Validate day based on the month
+  if (day < 1 || day > 31) {
+    // Invalid day input
+    date_error.style.display = "block";
+  } else if (
+    (month === 4 || month === 6 || month === 9 || month === 11) &&
+    day > 30
+  ) {
+    // 30-day month, but day exceeds 30
+    date_error.style.display = "block";
+  } else if (month === 2) {
+    // February
+    var year = year_input.value.trim(); // Get the year input value
+    if (year === "") {
+      // Year is not yet entered
+      date_error.style.display = "none";
+    } else {
+      year = parseInt(year); // Parse the year as an integer
+      var isLeapYear = leapYear(year);
+      if ((isLeapYear && day > 29) || (!isLeapYear && day > 28)) {
+        // Invalid day input for February
+        date_error.style.display = "block";
+      } else {
+        // Valid day input for February
+        date_error.style.display = "none";
+      }
+    }
+  } else {
+    // Valid day input for other months
+    date_error.style.display = "none";
   }
 }
 
