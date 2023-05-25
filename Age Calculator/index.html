@@ -16,21 +16,22 @@
           <div class="day">
             <p class="dates-text">Day</p>
             <input type="text" name="" id="day-input" class="dates-input"/>
-            <p class="error-valid-text" >Must be a valid day</p>
+            <p class="date-error-valid-text" >Must be a valid day</p>
             <p class="error-field-required">This field is required</p>
           </div>
           <!--Month-->
           <div class="month">
             <p class="dates-text">Month</p>
             <input type="text" name="" id="month-input" class="dates-input"/>
-            <p class="error-valid-text">Must be a valid month</p>
-            <p class="error-field-required">This field is required</p>
+            <p id="month-error-valid-text">Must be a valid month</p>
+            <p id="error-field-required">This field is required</p>
           </div>
           <!--Year-->
           <div class="year">
             <p class="dates-text">Year</p>
             <input type="text" name="" id="year-input" class="dates-input"/>
-            <p class="error-valid-text">Must be a in the past</p>
+            <p id="year-error-valid-text">Must be a in the past</p>
+    
             <p class="error-field-required">This field is required</p>
           </div>
         </div>
@@ -54,5 +55,6 @@
 
     <!--Javascript-->
     <script src="./js/script.js"></script>
+    <script src="./js/new.js"></script>
   </body>
 </html>
