@@ -1,13 +1,47 @@
 /* fonts */
 
-
 /* file setup*/
-:root{
-
+:root {
 }
 
-*{
-    margin:0;
-    padding:0; 
+* {
+  margin: 0;
+  padding: 0;
 }
 
+.ip-tracker-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ip-tracker-container .ip-holder {
+  height: 30%;
+  background-image: url("../images/pattern-bg-desktop.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ip-tracker-container .ip-holder .input-bar {
+  width: 80%;
+  display: flex;
+}
+
+.ip-tracker-container .ip-holder .input-bar input {
+  padding: 10px;
+  width: 85%;
+  background-color: beige;
+  outline: none;
+  border: none;
+  
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.ip-tracker-container .ip-holder .input-bar p {
+  padding: 10px;
+  background-color: black;
+
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
