@@ -1,38 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>proxylab</title>
-  </head>
-  <body>
-    <main class="lg:container mx-auto">
-      <header class="flex  justify-between  h-12 px-3 relative">
-        <!-- Logo-->
-        <div class="logo flex justify-center items-center">
-          <p><img src="./resources/Logo.svg" class="h-6 mr-1" alt="logo" /></p>
-          <p class="text-lg">Proxylab</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Custom css-->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>proxylab</title>
+</head>
+
+<body>
+  <main class="lg:container mx-auto">
+    <header class="flex justify-between h-12 px-3 relative">
+      <!-- Logo-->
+      <div class="logo flex justify-center items-center">
+        <p><img src="./resources/Logo.svg" class="h-6 mr-1" alt="logo" /></p>
+        <p class="text-lg">Proxylab</p>
+      </div>
+      <!--List items-->
+      <div
+        class="hidden flex-col items-center absolute w-7/12 bg-black right-0 h-screen lg:relative lg:flex-row lg:h-0 lg:justify-between">
+        <!-- Item lists-->
         <div
-          class="flex flex-col  items-center absolute w-7/12  right-0 h-screen lg:relative lg:flex-row lg:h-0 lg:justify-between"
-        >
-          <!-- Item lists-->
-          <div
-            class="flex flex-col mt-4 justify-between px-6 h-1/4  items-start lg:flex-row lg:px-0 lg:h-0"
-          >
-            <p class="text-lg lg:mr-4">Features</p>
-            <p class="text-lg lg:mr-4">Pricing & Plans</p>
-            <p class="text-lg lg:mr-4">Support</p>
-            <p class="text-lg ">About us</p>
+          class="flex flex-col mt-10 text-primary-orange-red justify-between px-6 h-1/4 items-start lg:flex-row lg:px-0 lg:h-0">
+          <p class="text-lg lg:mr-4">Features</p>
+          <p class="text-lg lg:mr-4">Pricing & Plans</p>
+          <p class="text-lg lg:mr-4">Support</p>
+          <p class="text-lg">About us</p>
+        </div>
+        <!-- Contact us button-->
+        <div class="flex items-center h-16 relative -left-4 lg:h-0 lg:items-start mt-4">
+          <p class="text-white rounded-full bg-primary-orange-red px-2 py-1">
+            Contact Us
+          </p>
+        </div>
+      </div>
+      <div class="icons flex items center">
+        <p id="x-bars" class="absolute  right-1 px-2 top-1 text-2xl">
+          <i class="fa-solid fa-bars text-primary-orange-red"></i>
+        </p>
+        <p id="x-mark class=" hidden absolute text-white right-1 top-1 text-2xl">
+          <i class="fa-solid fa-xmark"></i>
+        </p>
+      </div>
+    </header>
+    <!-- Hero section-->
+    <section class="flex items-center flex-col  h-max w-full lg:flex-row-reverse">
+      <!-- Hero image-->
+      <div class="flex  items-center relative w-full  h-max">
+        <img src="./resources/Happy girl 1.png" alt="">
+
+        <!--Linked in-->
+        <p class="absolute  right-0">
+          <img src="./resources/linkedin-2950130-2447889.png" alt="">
+        </p>
+
+      </div>
+      <!--hero text-->
+      <div class="flex flex-col  items-center w-full ">
+        <p class="text-4xl lg:text-6xl">Best <span
+            class="text-bold  text-primary-orange-red">Marketing</span><br />Digital
+          Agency</p>
+        <p class="text-lg lg:text-2xl font-light text-center">Various versions have evolved over the years, <br />
+          sometimes by accident, sometimes on purpose
+        </p>
+      </div>
+    </section>
+    <!-- Our clients section-->
+
+      <section class="flex flex-col h-max items-center">
+        <div class="flex items-center justify-between">
+          <p class="text-lg font-light">OUR TRUSTED CLIENTS</p>
+        </div>
+        <div class="flex justify-evenly items-center w-full bg-slate-200 ">
+          <div class="flex items-center justify-between  h-4  lg:h-12">
+            <img src="./resources/Slack (logo — Colour).svg" alt="">
           </div>
-          <!-- Contact us button-->
-          <div class="flex items-center  h-16 lg:h-0 lg:items-start mt-4">
-            <p class="text-white rounded-full bg-[#FD695A] px-2 py-1">Contact Us</p>
+          <div class="flex items-center justify-between h-4  lg:h-12">
+            <img src="./resources/Descript (logo — Colour).svg" alt="">
+          </div>
+          <div class="flex items-center justify-between h-12">
+            <img src="./resources/Etsy (logo — Colour).svg" alt="">
+          </div>
+          <div class="flex items-center justify-between h-12">
+            <img src="./resources/Logitech (logo — Colour).svg" alt="">
           </div>
         </div>
-      </header>
-    </main>
-  </body>
+      </section>
+      
+      </div>
+    </section>
+    <section class="mt-4 flex w-10/12 flex-col  mx-auto lg:flex-row">
+      <!--What we do-->
+      <div class="flex flex-col justify-center align-center px-3">
+        <p class="text-center text-primary-orange-red text-xl uppercase lg:text-start">
+          What we do
+        </p>
+        <p class="text-3xl lg:text-4xl inline">
+          We are here to help you build your business
+
+            <img src="./resources/rocket.png" class="h-8 w-8 inline-block" alt="">
+
+        </p>
+        <p class="text-xs text-gray-500 text-start font-light mt-3">
+          Sed ut perspriciatis unde omnis iste natus error sit down of the voluptatet accusantium lorem doloremque, totamrem aperiam, eaque ipsa quae ab iillo inventto veritat is quasi architecto beatae vitae dicta
+        </p>
+      
+        <div class="flex items-center h-16 relative mt-4">
+          <p class="text-white rounded-full bg-primary-orange-red px-2 py-1">
+            Explore all services
+          </p>
+        </div>
+      </div>
+      
+      
+      <!-- Cards -->
+      <div class="cards-wrapper mt-3 flex flex-wrap justify-between mx-auto px-3">
+        <div class="flex flex-col items-center justify-center p-3 rounded-lg shadow-md  w-6/12 ">
+          <p class="">
+            <img src="./resources/web-dev.svg" alt="">
+          </p>
+          <p class="font-bold text-xs">Web Development</p>
+          <p class="text-xs text-gray-400 text-start font-light">This is simply dummy text the printing and typesetting
+            library</p>
+          <p class="underline text-sm">Read More</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-md  w-6/12 ">
+          <p class="">
+            <img src="./resources/web-dev.svg" alt="">
+          </p>
+          <p class="font-bold text-xs">Web Development</p>
+          <p class="text-xs text-gray-400 text-start font-light">This is simply dummy text the printing and typesetting
+            library</p>
+          <p class="underline text-sm">Read More</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-md  w-6/12 ">
+          <p class="">
+            <img src="./resources/web-dev.svg" alt="">
+          </p>
+          <p class="font-bold text-xs">Web Development</p>
+          <p class="text-xs text-gray-400 text-start font-light">This is simply dummy text the printing and typesetting
+            library</p>
+          <p class="underline text-sm">Read More</p>
+          <div class="flex h-1 items-center justify-center w-full bg-primary-orange-red"></div>
+        </div>
+        <!-- Web development-->
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-md  w-6/12 ">
+          <p class="">
+            <img src="./resources/web-dev.svg" alt="">
+          </p>
+          <p class="font-bold text-xs">Web Development</p>
+          <p class="text-xs text-gray-400 text-start font-light">This is simply dummy text the printing and typesetting
+            library</p>
+          <p class="underline text-sm">Read More</p>
+
+
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
