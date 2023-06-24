@@ -1,0 +1,43 @@
+/* .rotating-words {
+  animation: rotate-words 10s linear infinite;
+  white-space: nowrap;
+}
+
+
+
+.gradient-span {
+    background: linear-gradient(45deg, #ff00cc, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: shine-animation 2s linear infinite;
+  }
+
+  @keyframes shine-animation {
+    0% { background-position: -200%; }
+    100% { background-position: 200%; }
+  }
+
+  .rotating-words {
+    animation: rotate-words 10s linear infinite;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  @keyframes rotate-words {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 20px)); } 
+  }
+  
+  .color-span1 {
+    color: #ff0000;
+  }
+
+  .color-span2 {
+    color: #00ff00; 
+  }
+
+  .color-span3 {
+    color: #0000ff; 
+  } */
