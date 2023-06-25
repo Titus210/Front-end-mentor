@@ -78,7 +78,7 @@
       <div class="flex items-center justify-between">
         <p class="text-lg font-light">OUR TRUSTED CLIENTS</p>
       </div>
-      <div class="flex justify-evenly items-center w-full bg-slate-200 ">
+      <div class="flex justify-evenly items-center w-full ">
         <div class="flex items-center justify-between  h-4  lg:h-12">
           <img src="./resources/Slack (logo — Colour).svg" alt="">
         </div>
@@ -290,7 +290,7 @@
         </div>
         <!-- About us & customers icons-->
         <div class="flex justify-between flex-col md:flex-row">
-          <div class="flex flex-col bg-slate-400 md:w-5/12">
+          <div class="flex flex-col  md:w-5/12">
             <!--customer testimonial text-->
             <div class="flex  items-center">
               <!--image-->
@@ -307,9 +307,9 @@
             </div>
             <!-- testimonial sentese-->
             <div>
-              <p>Our website is walking well for us. Our website was developed beautifylly by the proxylab team. We
+              <p class="text-xs font-light italic">"Our website is walking well for us. Our website was developed beautifylly by the proxylab team. We
                 really
-                appreciated the prompt responses and delivery of exactly what we requested as per our expectations.
+                appreciated the prompt responses and delivery of exactly what we requested as per our expectations."
               </p>
             </div>
           </div>
@@ -323,7 +323,7 @@
         </div>
       </section>
       <!-- CUSTOMER ADVERTISEMENT-->
-      <section class="flex flex-col justify-between items-center">
+      <section class="flex flex-col justify-evenly items-center md:flex-row">
         <div class="flex item-center">
           <img src="./resources/serious-man-thinking 1.png" alt="">
         </div>
@@ -340,9 +340,9 @@
           </div>
         </div>
       </section>
-      <footer class="flex flex-wrap  justify-evenly">
+      <footer class="flex flex-wrap justify-evenly">
         <!-- Proxy lab-->
-        <div class="flex  flex-col  w-5/12">
+        <div class="flex  flex-col  w-5/12 md:w-3/12">
           <!-- Logo-->
           <div class="logo flex ">
             <p><img src="./resources/Logo.svg" class="h-6 mr-1" alt="logo" /></p>
@@ -353,7 +353,7 @@
           <p class="text-xs  font-light"><span><i class="fa fa-email"></i></span> support@proxylab.com</p>
         </div>
         <!--service-->
-        <div class="flex  flex-col w-5/12">
+        <div class="flex  flex-col w-5/12 md:w-2/12">
           <p class="text-xs  font-bold mb-2 ">Service</p>
           <p class="text-xs font-light">UI UX Design</p>
           <p class="text-xs font-light">Mobile Design</p>
@@ -363,7 +363,7 @@
           <p class="text-xs font-light">Business Development</p>
         </div>
         <!--company-->
-        <div class="flex  flex-col w-5/12">
+        <div class="flex  flex-col w-5/12 md:w-2/12">
           <p class="text-xs  font-bold mb-2">Company</p>
           <p class="text-xs font-light">Service</p>
           <p class="text-xs font-light">Features</p>
@@ -373,7 +373,7 @@
           <p class="text-xs font-light">Contact Us</p>
         </div>
         <!--Our Social Media-->
-        <div class="flex flex-col w-5/12">
+        <div class="flex flex-col w-5/12 md:w-2/12">
           <p class="text-xs  font-bold my-2">Our Social Media</p>
           <p class="text-xs font-light">Dribble</p>
           <p class="text-xs font-light">Behance</p>
@@ -383,10 +383,10 @@
           <p class="text-xs font-light">Twitter</p>
         </div>
         <!--Join a Newsletter-->
-        <div class="flex flex-col w-12/12">
+        <div class="flex flex-col w-12/12 md:w-2/12">
           <p class="text-xs  font-bold">Join a Newsletter</p>
-          <div class="flex flex-row">
-            <input type="text" name="" id="" placeholder="Enter Your Email" class="bg-slate-200 border p-1 w-8/12">
+          <div class="flex flex-row md:flex-col">
+            <input type="text" name="" id="" placeholder="Enter Your Email" class="bg-slate-200 border p-1 w-8/12 md:w-12/12 md:p-0">
             <div class="flex items-center ">
               <p class=" text-xs text-white  bg-primary-orange-red px-2 py-2">
                 Subscribe
@@ -395,6 +395,18 @@
           </div>
         </div>
       </footer>
+      <!--COPYWRITE-->
+      <hr/>
+      <section class="flex justify-between ">
+        <div class="flex">
+          <p class="text-xs">@2021 proxylab - All rights reserved</p>
+        </div>
+        <div class="flex items-center">
+          <p class="text-xs font-light">Privacy</p>
+          <p class="text-xs font-light">Security</p>
+          <p class="text-xs font-light">Terms</p>
+        </div>
+      </section>
   </main>
 </body>
 
