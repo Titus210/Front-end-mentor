@@ -17,7 +17,7 @@
 
 <body>
   <main class="lg:container mx-auto">
-    <header class="flex justify-between h-12 px-3 relative">
+    <header class=" flex justify-between h-12 px-3 relative lg:w-11/12 mx-auto">
       <!-- Logo-->
       <div class="logo flex justify-center items-center">
         <p><img src="./resources/Logo.svg" class="h-6 mr-1" alt="logo" /></p>
@@ -25,24 +25,25 @@
       </div>
       <!--List items-->
       <div
-        class="hidden flex-col items-center absolute w-7/12 bg-black right-0 h-screen lg:relative lg:flex-row lg:h-0 lg:justify-between">
+        class="flex-col items-center absolute w-7/12 bg-black right-0 h-screen lg:relative lg:flex-row lg:h-0 lg:justify-between">
         <!-- Item lists-->
         <div
-          class="flex flex-col mt-10 text-primary-orange-red justify-between px-6 h-1/4 items-start lg:flex-row lg:px-0 lg:h-0">
-          <p class="text-lg lg:mr-4">Features</p>
-          <p class="text-lg lg:mr-4">Pricing & Plans</p>
-          <p class="text-lg lg:mr-4">Support</p>
+          class="flex flex-col mt-10 text-primary-orange-red justify-between px-6 h-1/4 items-start lg:flex-row lg:px-0 lg:h-0 lg:mt-0">
+          <p class="text-lg lg:mr-2 ">Features</p>
+          <p class="text-lg lg:mr-2">Pricing & Plans</p>
+          <p class="text-lg lg:mr-2">Support</p>
           <p class="text-lg">About us</p>
-        </div>
-        <!-- Contact us button-->
-        <div class="flex items-center h-16 relative -left-4 lg:h-0 lg:items-start mt-4">
-          <p class="text-white rounded-full bg-primary-orange-red px-2 py-1">
-            Contact Us
-          </p>
+          <!-- Contact us button-->
+          <div class="flex items-center h-16 relative -left-4 lg:h-0 lg:items-start ">
+            <p class="text-white rounded-full bg-primary-orange-red px-2 py-1">
+              Contact Us
+            </p>
+          </div>
         </div>
       </div>
+
       <div class="icons flex items center">
-        <p id="x-bars" class="absolute  right-1 px-2 top-1 text-2xl">
+        <p id="x-bars" class="hidden absolute  right-1 px-2 top-1 text-2xl">
           <i class="fa-solid fa-bars text-primary-orange-red"></i>
         </p>
         <p id="x-mark class=" hidden absolute text-white right-1 top-1 text-2xl">
@@ -51,7 +52,7 @@
       </div>
     </header>
     <!-- Hero section-->
-    <section class="flex items-center flex-col  h-max w-full lg:flex-row-reverse">
+    <section class="flex items-center flex-col  h-max w-full lg:flex-row-reverse lg:w-11/12 mx-auto">
       <!-- Hero image-->
       <div class="flex  items-center relative w-full  h-max">
         <img src="./resources/Happy girl 1.png" alt="">
@@ -307,7 +308,8 @@
             </div>
             <!-- testimonial sentese-->
             <div>
-              <p class="text-xs font-light italic">"Our website is walking well for us. Our website was developed beautifylly by the proxylab team. We
+              <p class="text-xs font-light italic">"Our website is walking well for us. Our website was developed
+                beautifylly by the proxylab team. We
                 really
                 appreciated the prompt responses and delivery of exactly what we requested as per our expectations."
               </p>
@@ -386,7 +388,8 @@
         <div class="flex flex-col w-12/12 md:w-2/12">
           <p class="text-xs  font-bold">Join a Newsletter</p>
           <div class="flex flex-row md:flex-col">
-            <input type="text" name="" id="" placeholder="Enter Your Email" class="bg-slate-200 border p-1 w-8/12 md:w-12/12 md:p-0">
+            <input type="text" name="" id="" placeholder="Enter Your Email"
+              class="bg-slate-200 border p-1 w-8/12 md:w-12/12 md:p-0">
             <div class="flex items-center ">
               <p class=" text-xs text-white  bg-primary-orange-red px-2 py-2">
                 Subscribe
@@ -396,7 +399,7 @@
         </div>
       </footer>
       <!--COPYWRITE-->
-      <hr/>
+      <hr />
       <section class="flex justify-between ">
         <div class="flex">
           <p class="text-xs">@2021 proxylab - All rights reserved</p>
