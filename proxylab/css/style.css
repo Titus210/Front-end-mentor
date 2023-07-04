@@ -41,3 +41,10 @@
   .color-span3 {
     color: #0000ff; 
   } */
+
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  

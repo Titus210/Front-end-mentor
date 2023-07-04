@@ -978,8 +978,12 @@ video {
     position: relative;
   }
 
-  .lg\:mr-4 {
-    margin-right: 1rem;
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:h-0 {
@@ -992,6 +996,10 @@ video {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .lg\:w-5\/12 {
