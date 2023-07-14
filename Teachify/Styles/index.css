@@ -1,0 +1,34 @@
+/* universal configuration */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* DEFAULTS */
+:root {
+  --primary-color: #6c68ff;
+  --sucess-color: #00bf8e;
+  --warning-color: #f7c94b;
+  --danger-color: #f75842;
+  --danger-variant-color: rgba(247, 88, 66, 0.4);
+  --white-color: #fff;
+  --light-color: rgba(255, 255, 255, 0.7);
+  --black-colr: #000;
+  --background-color: #1f2641;
+  --background-color-1: #2e3267;
+  --background-color-1: #424890;
+
+  /* Container size Width points*/
+  --container-lg: 76%;
+  --container-md: 90%;
+  --container-sm: 94%;
+
+  /* transitions */
+  --transition: all 400ms ease;
+}
