@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
+
 /* universal configuration */
 * {
   margin: 0;
@@ -19,16 +22,95 @@
   --danger-variant-color: rgba(247, 88, 66, 0.4);
   --white-color: #fff;
   --light-color: rgba(255, 255, 255, 0.7);
-  --black-colr: #000;
+  --black-color: #000;
   --background-color: #1f2641;
   --background-color-1: #2e3267;
   --background-color-1: #424890;
 
   /* Container size Width points*/
-  --container-lg: 76%;
+  --container-lg: 80%;
   --container-md: 90%;
   --container-sm: 94%;
 
   /* transitions */
   --transition: all 400ms ease;
 }
+
+/* Body setup */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--white-color);
+  background: var(--background-color);
+}
+
+/* Common width */
+.container {
+  width: var(--container-lg);
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--white-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--white-color);
+  color: var(--black-color);
+  padding: 1rem 2 rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.btn-primary {
+  background: var(--danger-color);
+  color: var(--white-color);
+}
+
