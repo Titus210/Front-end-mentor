@@ -1,0 +1,100 @@
+/* font setup */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&display=swap");
+
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-16: 1rem;
+  --font-32: 2rem;
+  --font-48: 3rem;
+
+  --primary-color-orange: #ff8c00;
+  --primary-color-dark-orange: #ffa500;
+  --secondary-color-orange: #daa520;
+  --secondary-color-dark-orange: #ffff00;
+  --accent-color-orange: #ffd700;
+
+  --primary-color-blue: #000080;
+  --primary-color-dark-blue: #00004d;
+  --secondary-color-blue: #4169e1;
+  --secondary-color-dark-blue: #2c4f8f;
+  --accent-color-blue: #6a5acd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(102, 88, 88);
+  font-family: var(--font-roboto);
+  font-size: 1rem;
+}
+
+h1 {
+}
+
+/* Logoo */
+
+/* Button */
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+/* cards size */
+
+/* Icons */
+.icons {
+  font-size: var(--font-32);
+  padding: 12px;
+}
+
+/* Logo */
+.logo .logo-name {
+  text-align: center;
+  color: #ff8c00;
+  font-size: 20px;
+}
+
+.logo .logo-text {
+  color: rgb(156, 155, 155);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* responsive display modes */
+.mobile-display-none {
+  display: flex;
+}
+
+
+/* ABOVE 768px RESPONSIVENESS */
+
+@media screen and (min-width: 768px) {
+  .desktop-display-none {
+    display: none;
+  }
+}

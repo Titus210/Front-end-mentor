@@ -1,0 +1,168 @@
+/* NEWS ITEMS SECTION */
+.news-items {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headlines */
+.news-items .headlines {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* navigation */
+
+.headlines .nav .categories {
+  display: flex;
+  padding: 8px;
+}
+
+.headlines .nav .categories p {
+  margin-right: 12px;
+  color: rgb(156, 151, 151);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* cards */
+.headlines .headlines-cards {
+  display: flex;
+  overflow-x: hidden;
+  width: max-content;
+}
+
+.headlines .headlines-cards .card-1 {
+  height: 250px;
+  width: 220px;
+  /* 
+  background-image: url("../images/obama.png"); 
+  background-position: center;
+  background-size: cover;
+  */
+  border-radius: 4%;
+  margin-right: 12px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: end;
+
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.headlines .headlines-cards .card-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/voting.png");
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px); /* Apply the blur effect */
+  z-index: -1; /* Move the blurred image behind the content */
+}
+.headlines .headlines-cards .card-1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.headlines .headlines-cards .card-1 p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #d8c2ba;
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to the paragraph */
+}
+
+/* latest news */
+.latest-news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.latest-news h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.latest-news .latest-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.latest-cards .card-1 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid rgb(112, 109, 102);
+  margin-bottom: 12px;
+}
+.latest-cards .card-1 .image {
+  border-radius: 8%;
+  margin-right: 12px;
+}
+.latest-cards .card-1 .image img {
+  border-radius: 8%;
+  height: 70px;
+  width: 80px;
+  object-fit: cover;
+}
+.latest-cards .card-1 .text p {
+  color: white;
+}
+
+/* ABOVE 768px RESPONSIVENESS */
+
+@media screen and (min-width: 968px) {
+  /* cards */
+  .news-items {
+    height: max-content;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* cards */
+
+  .headlines .headlines-cards {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+  }
+  .news-items {
+    flex-direction: row;
+  }
+  /* Headlines */
+  .headlines {
+    width: 50%;
+  }
+
+  .headlines .headlines-cards .card-1 {
+    height: 300px;
+    width: 43%;
+    margin-bottom: 12px;
+  }
+  .headlines .nav .categories {
+    justify-content: center;
+  }
+
+  .headlines .nav .categories p {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  /* latest news */
+  .latest-news {
+    width: 28%;
+    border: 1px solid rgb(152, 144, 67);
+    padding: 22px;
+  }
+}

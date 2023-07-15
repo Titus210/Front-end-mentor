@@ -1,0 +1,140 @@
+
+.contact-page {
+  background-color: rgb(253, 252, 252);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 95%;
+  border-radius: 32px;
+  
+}
+
+.contact-details {
+  width: 100%;
+  height: 50%;
+  background: #f5f5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+}
+.contact-details h2 {
+  font-size: 21px;
+  color: orangered;
+}
+.contact-details p {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.contact-details .contact-form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-details .contact-form input {
+  padding: 8px;
+  width: 90%;
+
+  border: 0;
+  border-bottom: 1px solid rgb(243, 238, 238);
+  outline: none;
+}
+
+.contact-details .contact-form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details .contact-form .send {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+.contact-details .contact-form .send button {
+  padding: 8px;
+  background-color: rgb(65, 61, 61);
+  width: 90%;
+  color: rgb(214, 205, 205);
+  border-radius: 7px;
+}
+/* information wrapper */
+.info-wrapper > div {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.info-wrapper > div i {
+  margin-right: 10px;
+  color: white;
+}
+/* Info wrapper  heading */
+
+.info-wrapper h2 {
+}
+
+.info-card {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 36, 36);
+}
+.info-wrapper {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-wrapper h2 {
+  font-size: 36px;
+  color: white;
+}
+
+.info-wrapper > div p {
+  font-size: 21px;
+  color: rgb(133, 111, 104);
+}
+
+@media screen and (min-width: 968px) {
+  .contact-page {
+    flex-direction: row;
+  }
+  .contact-details {
+    width: 40%;
+    height: 60%;
+  }
+
+  .contact-wrapper {
+    width: 65%;
+    height: 60%;
+    border-radius: 32px;
+    background-color: #f0e9e9;
+  }
+
+  .info-wrapper {
+    width: 20%;
+    height: 50%;
+
+    padding: 20px;
+  }
+  .info-card {
+    width: 50%;
+    justify-content: start;
+  }
+}
