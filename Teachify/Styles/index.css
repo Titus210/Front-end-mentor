@@ -25,7 +25,7 @@
   --black-color: #000;
   --background-color: #1f2641;
   --background-color-1: #2e3267;
-  --background-color-1: #424890;
+  --background-color-2: #424890;
 
   /* Container size Width points*/
   --container-lg: 80%;
@@ -47,6 +47,7 @@ body {
 /* Common width */
 .container {
   width: var(--container-lg);
+  margin: auto;
 }
 
 section {
@@ -166,4 +167,79 @@ header {
   align-items: center;
   gap: 5rem;
   height: 100%;
+}
+
+.header-left p {
+  margin: 1rem 0 2.4rem;
+}
+
+/*________________ CATEGORIES _________________*/
+.categories {
+  background: var(--background-color-1);
+  height: 29rem;
+}
+
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* gap: 4rem; */
+}
+.categories-left {
+  margin-right: 2rem;
+}
+
+.categories-left p {
+  margin: 3rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+.categories-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.category {
+  background: var(--background-color-2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.category:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.category:nth-child(2) .category-icon {
+  background-color: var(--danger-color);
+}
+.category:nth-child(3) .category-icon {
+  background-color: var(--sucess-color);
+}
+.category:nth-child(4) .category-icon {
+  background-color: var(--warning-color);
+}
+.category:nth-child(5) .category-icon {
+  background-color: var(--sucess-color);
+}
+
+
+.category-icon {
+  background: var(--primary-color);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.category h5 {
+  margin: 2rem 0 1rem;
+}
+
+.category p {
+  font-size: 0.65rem;
 }
