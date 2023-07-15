@@ -114,3 +114,41 @@ img {
   color: var(--white-color);
 }
 
+/* _______________NAVBAR__________________ */
+
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav-menu a:hover {
+  color: var(--background-color-1);
+}
+
+
