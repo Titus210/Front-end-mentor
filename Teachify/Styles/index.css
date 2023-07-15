@@ -96,7 +96,7 @@ img {
   display: inline-block;
   background: var(--white-color);
   color: var(--black-color);
-  padding: 1rem 2 rem;
+  padding: 1rem 2rem;
   border: 1px solid transparent;
   font-weight: 500;
 
@@ -151,4 +151,19 @@ nav button {
   color: var(--background-color-1);
 }
 
+/*________________HEADER _________________*/
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
 
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
