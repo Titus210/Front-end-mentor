@@ -115,6 +115,8 @@ img {
   color: var(--white-color);
 }
 
+
+
 /* _______________NAVBAR__________________ */
 
 nav {
@@ -157,6 +159,8 @@ nav button {
   background: var(--primary-color);
   box-shadow: 0 1rem rgba(0, 0, 0, 0.2);
 }
+
+
 /*________________HEADER _________________*/
 header {
   position: relative;
@@ -177,6 +181,8 @@ header {
 .header-left p {
   margin: 1rem 0 2.4rem;
 }
+
+
 
 /*________________ CATEGORIES _________________*/
 .categories {
@@ -246,4 +252,38 @@ header {
 
 .category p {
   font-size: 0.65rem;
+}
+
+
+
+/*________________  COURSES  _________________*/
+.courses {
+  margin-top: 10rem;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.course {
+  background-color: var(--background-color-1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course:hover {
+  background: transparent;
+  border-color: var(--primary-color);
+}
+
+.course-content {
+  padding: 2rem;
+}
+
+.course-content p {
+  margin: 0.7rem 0 2rem;
+  font-size: 0.8rem;
 }
