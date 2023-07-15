@@ -152,6 +152,11 @@ nav button {
   color: var(--background-color-1);
 }
 
+/* Change navbar styles scroll using javascript */
+.window-scroll {
+  background: var(--primary-color);
+  box-shadow: 0 1rem rgba(0, 0, 0, 0.2);
+}
 /*________________HEADER _________________*/
 header {
   position: relative;
@@ -228,7 +233,6 @@ header {
 .category:nth-child(5) .category-icon {
   background-color: var(--sucess-color);
 }
-
 
 .category-icon {
   background: var(--primary-color);
