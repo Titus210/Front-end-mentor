@@ -21,3 +21,23 @@ faqs.forEach(faq => {
         }
     })
 })
+
+
+/* Show and hide nav menu */
+const menu = document.querySelector('.nav-menu');
+const open_btn = document.getElementById('open-menu-btn');
+const close_btn = document.getElementById('close-menu-btn');
+
+open_btn.addEventListener('click', () => {
+    menu.style.display = 'flex';
+    close_btn.style.display = 'inline-block';
+    open_btn.style.display = 'none';
+})
+
+// close nav menu
+const closeNav = () => {
+    menu.style.display = 'none'
+    close_btn.style.display = 'none';
+    open_btn.style.display = 'inline-block';
+}
+
