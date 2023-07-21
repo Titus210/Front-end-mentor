@@ -79,7 +79,12 @@
   bottom: 0;
   padding: 16px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to the paragraph */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Add a semi-transparent background to the paragraph */
 }
 
 /* latest news */
@@ -121,7 +126,7 @@
 
 /* ABOVE 768px RESPONSIVENESS */
 
-@media screen and (min-width: 968px) {
+@media screen and (-width: 968px) {
   /* cards */
   .news-items {
     height: max-content;
