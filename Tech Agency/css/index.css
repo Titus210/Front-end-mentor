@@ -1,19 +1,21 @@
-/* Defaults */
-
 :root {
   /* primary colors */
   --white: #fff;
+  --grayish: rgba(218, 222, 226, 0.932);
   --black: #111;
-  --primary-color: teal;
-  --primary-color-2: rgb(118, 82, 237);
+  --primary-color-2: rgb(27, 110, 110);
+  --primary-color: rgb(118, 82, 237);
 
-  --background-1: rgba(37, 36, 36, 0.577);
+  --background-1: rgba(22, 22, 22, 0.904);
   --star-color: rgb(255, 208, 0);
 
   /* Fonts */
   --paragraph: 1.4rem;
-  --header-main: 3.4rem;
-  --section-header: 2.2rem;
+  --header-main: 2.8rem;
+  --header-main-desktop: 3.2rem;
+  --section-header: 1.9rem;
+  --medium-text-desktop: 1.3rem;
+  --medium-text: 0.8rem;
 
   /* Font weight */
   --weight-200: 200;
@@ -21,7 +23,17 @@
   --weight-400: 400;
 
   /* transition 8*/
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--background-1);
 }
 
 h1,
@@ -42,14 +54,26 @@ h2 {
   font-size: var(--section-header);
 }
 
+h3 {
+  font-size: var(--medium-text);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
 p {
   font-size: var(--paragraph);
 }
 
-.btn {
-  padding: 1rem 2rem;
-  border: 0.4rem solid var(--primary-color);
+a {
+  text-decoration: none;
   color: var(--white);
+}
+
+.btn {
+  border: 0.1rem solid var(--primary-color);
+  color: var(--white);
+
+  font-size: 1.1rem;
+  padding: 0.8rem;
 }
 
 .btn:hover {
@@ -57,7 +81,167 @@ p {
   color: var(--black);
 }
 
+.section-text {
+  font-size: var(--medium-text);
+}
 
-.section-text{
-    
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+  flex-direction: column;
+}
+
+/*  ------------------ HEADER -----------------------*/
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--background-1);
+  align-items: center;
+  padding: 1rem 0.8rem;
+}
+
+header .logo {
+}
+
+/* logo */
+.logo h3 {
+  color: var(--white);
+  text-decoration: line-through;
+  text-decoration-color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+header nav {
+}
+
+header div {
+  width: 30%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/*  ------------------ HERO -----------------------*/
+
+.hero-container {
+  padding: 0.8rem 0.5rem;
+  background-image: url("../images/light-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(29, 29, 34);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container .text h1 {
+  color: var(--white);
+  margin: 1.7rem 0rem;
+}
+
+.hero-container .text p {
+  text-transform: uppercase;
+}
+.hero-container .getting-started {
+  width: 60%;
+}
+
+.hero-container .cards {
+  display: grid;
+  gap: 0.2rem;
+  align-self: center;
+  margin: 1.2rem 0rem;
+}
+
+.hero-container .card {
+  background-color: #1f2022b0;
+  border: 1px solid #adabab;
+  margin: 0.3rem 0rem;
+}
+
+.hero-container .card {
+  padding: 1rem 0.4rem;
+}
+
+.hero-container .card p {
+  color: var(--grayish);
+  font-size: var(--medium-text);
+  font-style: italic;
+  font-weight: 300;
+  margin: 0.6rem 0rem;
+}
+/*  ------------------ SERVICES -----------------------*/
+.services-container {
+  background-color: var(--background-1);
+}
+/*---------------------- MEDIA QUERIES--------------------------------- */
+/* TABLET */
+@media (min-width: 768px) and (max-width: 968px) {
+  .hero {
+    height: 60vh;
+  }
+  .text-wrapper {
+    width: 50%;
+  }
+  .hero-container .getting-started {
+    width: 50%;
+  }
+
+  .hero-container .cards {
+    display: grid;
+    gap: 1.4rem;
+
+    align-self: center;
+  }
+
+  .hero-container .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 968px) {
+  .section-text {
+    font-size: var(--medium-text-desktop);
+  }
+  h1 {
+    font-weight: var(--header-main-desktop);
+  }
+  .hero-container {
+    height: 80vh;
+    background-position: -39% -45%;
+    padding: 2rem 3rem;
+  }
+
+  .text-wrapper {
+    width: 40%;
+  }
+
+  .hero-container .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-container .getting-started {
+    width: 40%;
+  }
+
+  .hero-container .cards {
+    gap: 1.4rem;
+  }
 }

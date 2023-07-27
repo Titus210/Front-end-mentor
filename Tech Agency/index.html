@@ -6,23 +6,46 @@
     <title>Tech Agency</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- Fonts -->
   </head>
   <!--_________________ HEADER ________________-->
-  <header>
+  <header class="">
     <!--logo-->
-    <div>
-      <h2>Ville<span>Tech</span></h2>
+    <div class="logo">
+      <h3>V.l<span>Tech</span></h3>
     </div>
     <!--nav list-->
     <nav>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <select name="home" id="home">
+            <optgroup>
+              <option value="home"><a href="#">Home</a></option>
+              <option value="home"><a href="#">Services</a></option>
+              <option value="home"><a href="#">Projects</a></option>
+              <option value="home"><a href="#">About</a></option>
+              <option value="home"><a href="#">Testimonials</a></option>
+            </optgroup>
+          </select>
+        </li>
+        <li>
+          <select name="services" id="services">
+            <optgroup>
+              <option value="home"><a href="#">Services</a></option>
+              <option value="home"><a href="#">Web design</a></option>
+              <option value="home"><a href="#">UI Design</a></option>
+              <option value="home"><a href="#">Digital Marketing</a></option>
+              <option value="home"><a href="#">Web Hosting</a></option>
+            </optgroup>
+          </select>
+        </li>
+<li><a href="">Works</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Blog</a></li>
+<li class="contact-us"><a href="" class="btn">Contact</a></li>
+
       </ul>
     </nav>
   </header>
@@ -32,25 +55,31 @@
   <section class="hero">
     <div class="hero-container container">
       <!--hero text content-->
-      <div class="text">
-        <p class="section-text">Inovative Build, Creative Mind</p>
-        <h1>We are digital tech agency</h1>
-        <p class="btn">Getting Started</p>
+      
+      <div class="text-wrapper">
+        <div class="text">
+          <p class="section-text">Inovative Build, Creative Mind</p>
+          <h1>We are digital tech agency</h1>
+        </div>
+         <div class="getting-started">
+              <p class="btn">Getting Started</p>
+        </div>
       </div>
+
       <!--cards -->
       <div class="cards">
         <div class="card">
-          <p>
+          <p class="icon">
             <i class="fa"></i>
           </p>
-          <h3>Innoovative Technology</h3>
+          <h3>Innovaive Technology</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
             eveniet a excepturi, molestias enim rem.
           </p>
         </div>
         <div class="card">
-          <p>
+          <p class="icon">
             <i class="fa"></i>
           </p>
           <h3>Big thinking</h3>
@@ -60,7 +89,7 @@
           </p>
         </div>
         <div class="card">
-          <p>
+          <p class="icon">
             <i class="fa"></i>
           </p>
           <h3>Creative Solutions</h3>
@@ -77,8 +106,9 @@
   <!--_________________ SERVICES ________________-->
 
   <section class="services">
+    <div class="services-container">
     <!-- heading-->
-    <div class="heading">
+      <div class="heading">
       <h3><span>--------</span> Services</h3>
       <p class="section-text">Our client services</p>
     </div>
@@ -149,6 +179,7 @@
 
     <!-- section connector-->
     <div class="connector">---</div>
+  </div>
   </section>
   <!--_________________END OF SERVICES ________________-->
 
