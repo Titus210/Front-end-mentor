@@ -42,6 +42,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--background-1);
   font-family: var(--font-roboto);
@@ -101,6 +104,9 @@ a:hover {
   cursor: pointer;
 }
 
+li {
+  list-style-type: none;
+}
 img {
   width: 100%;
   height: 100%;
@@ -125,13 +131,14 @@ i {
   padding: 1rem 2rem;
   border: 1px solid transparent;
   font-weight: 500;
+  text-transform: uppercase;
 
   transition: var(--transition);
 }
 
 .btn:hover {
   background: transparent;
-  color: var(--white-color);
+  color: gold;
   border-color: var(--white-color);
 }
 
@@ -142,20 +149,19 @@ header {
 header nav {
   position: relative;
 }
-header nav .logo {
-}
 
-header nav .logo h2 {
+.logo h2 {
   color: var(--primary-color-orange);
   padding: 0.4rem 1rem;
 }
 
-header nav .logo p {
+.logo p {
   color: #1b2332;
   font-weight: 300;
   font-style: italic;
   font-size: var(--font-16);
-  margin-left: 12px;
+  color: #9e1;
+
   text-transform: capitalize;
 }
 
@@ -197,7 +203,8 @@ header nav .nav-items .nav-list a {
 }
 
 header nav .nav-items .nav-list a:hover {
-  background-color: #9dafd0;
+  background-color: rgb(157, 175, 208, 0.3);
+  color: #9e1;
 }
 
 header nav .nav-items .membership-btn {
@@ -233,6 +240,72 @@ header nav .nav-toggle #menu-close {
   display: none;
 }
 
+/* FOOTER */
+footer {
+  background: var(--accent-color-blue);
+  padding: 2rem;
+  font: size 0.9rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-container div h4 {
+  margin-bottom: 1.2rem;
+  color: #9e1;
+}
+
+.footer-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-1 h2 {
+  font-size: var(--font-48);
+}
+
+.footer-1 p {
+  color: var(--white-color);
+  text-align: center;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  margin-left: 0.3rem;
+  color: var(--primary-color-orange);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer-4 p {
+  color: var(--white-color);
+  
+}
+/* Reset margin on social icons */
+.footer-socials li a:hover {
+  margin-left: 0rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--background-1);
+  color:var(--primary-color-orange)
+}
 /* ========================== MEDIA QUERIES (TABLETS) =================== */
 
 @media screen and (min-width: 678px) {
