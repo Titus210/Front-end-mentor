@@ -1,0 +1,63 @@
+/* Defaults */
+
+:root {
+  /* primary colors */
+  --white: #fff;
+  --black: #111;
+  --primary-color: teal;
+  --primary-color-2: rgb(118, 82, 237);
+
+  --background-1: rgba(37, 36, 36, 0.577);
+  --star-color: rgb(255, 208, 0);
+
+  /* Fonts */
+  --paragraph: 1.4rem;
+  --header-main: 3.4rem;
+  --section-header: 2.2rem;
+
+  /* Font weight */
+  --weight-200: 200;
+  --weight-700: 700;
+  --weight-400: 400;
+
+  /* transition 8*/
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: var(--header-main);
+}
+
+h2 {
+  font-size: var(--section-header);
+}
+
+p {
+  font-size: var(--paragraph);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 0.4rem solid var(--primary-color);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+
+
+.section-text{
+    
+}
