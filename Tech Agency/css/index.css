@@ -4,27 +4,33 @@
   --grayish: rgba(218, 222, 226, 0.932);
   --black: #111;
   --primary-color-2: rgb(27, 110, 110);
-  --primary-color: rgb(118, 82, 237);
+  --primary-color: rgb(118, 82, 237,0.7);
 
   --background-1: rgba(22, 22, 22, 0.904);
   --star-color: rgb(255, 208, 0);
 
   /* Fonts */
-  --paragraph: 1.4rem;
+  --paragraph: 1.6rem;
   --header-main: 2.8rem;
   --header-main-desktop: 3.2rem;
   --section-header: 1.9rem;
   --medium-text-desktop: 1.3rem;
-  --medium-text: 0.8rem;
+  --medium-text: 0.9rem;
+  --icon-font: 1.6rem;
 
   /* Font weight */
   --weight-200: 200;
   --weight-700: 700;
   --weight-400: 400;
 
-  /* transition 8*/
+  /* Padding */
+  --desktop-padding: 2rem 7rem;
+  --mobile-padding: 0.8rem 0.5rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +64,7 @@ h3 {
   font-size: var(--medium-text);
   color: var(--primary-color);
   text-transform: uppercase;
+  
 }
 p {
   font-size: var(--paragraph);
@@ -85,6 +92,16 @@ a {
   font-size: var(--medium-text);
 }
 
+.heading h3 {
+  font-size: var(--section-header);
+  color: var(--white);
+}
+
+.heading p {
+  font-size: var(--medium-text);
+  text-transform: uppercase;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -96,6 +113,15 @@ a {
   flex-direction: column;
 }
 
+.icon i {
+  font-size: var(--icon-font);
+  color: var(--primary-color);
+}
+
+.container {
+  padding: var(--mobile-padding);
+}
+
 /*  ------------------ HEADER -----------------------*/
 header {
   display: flex;
@@ -105,18 +131,12 @@ header {
   padding: 1rem 0.8rem;
 }
 
-header .logo {
-}
-
 /* logo */
 .logo h3 {
   color: var(--white);
   text-decoration: line-through;
   text-decoration-color: var(--primary-color);
   text-transform: uppercase;
-}
-
-header nav {
 }
 
 header div {
@@ -139,7 +159,6 @@ nav ul li:not(:last-child) {
 /*  ------------------ HERO -----------------------*/
 
 .hero-container {
-  padding: 0.8rem 0.5rem;
   background-image: url("../images/light-1.jpg");
   background-size: cover;
   background-position: center;
@@ -162,39 +181,57 @@ nav ul li:not(:last-child) {
   width: 60%;
 }
 
-.hero-container .cards {
+.cards {
   display: grid;
   gap: 0.2rem;
   align-self: center;
   margin: 1.2rem 0rem;
 }
 
-.hero-container .card {
+.card {
   background-color: #1f2022b0;
   border: 1px solid #adabab;
-  margin: 0.3rem 0rem;
+      padding: 1rem 1.4rem;
 }
 
-.hero-container .card {
+.card {
   padding: 1rem 0.4rem;
 }
 
-.hero-container .card p {
+.card:nth-child(even) {
+  border: 1px solid var(--primary-color);
+}
+
+.card p {
   color: var(--grayish);
   font-size: var(--medium-text);
   font-style: italic;
   font-weight: 300;
-  margin: 0.6rem 0rem;
+  margin:1rem 0rem;
 }
 /*  ------------------ SERVICES -----------------------*/
-.services-container {
-  background-color: var(--background-1);
+.services {
+  background-color: var(--black);
 }
+.services-container .cards .card {
+  border-bottom: 3px solid var(--white);
+}
+
+
+/* colored icons */
+.services-container .web-dev{
+  background:var(--primary-color);
+}
+
+.services-container .web-dev{
+  background:var(--primary-color);
+}
+
 /*---------------------- MEDIA QUERIES--------------------------------- */
 /* TABLET */
 @media (min-width: 768px) and (max-width: 968px) {
+  /* hero */
   .hero {
-    height: 60vh;
   }
   .text-wrapper {
     width: 50%;
@@ -203,14 +240,7 @@ nav ul li:not(:last-child) {
     width: 50%;
   }
 
-  .hero-container .cards {
-    display: grid;
-    gap: 1.4rem;
-
-    align-self: center;
-  }
-
-  .hero-container .cards {
+  .cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -223,25 +253,32 @@ nav ul li:not(:last-child) {
   h1 {
     font-weight: var(--header-main-desktop);
   }
-  .hero-container {
-    height: 80vh;
-    background-position: -39% -45%;
-    padding: 2rem 3rem;
-  }
 
-  .text-wrapper {
-    width: 40%;
-  }
-
-  .hero-container .cards {
+  .cards {
+    gap: 1.4rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .hero-container .getting-started {
-    width: 40%;
+  .card {
+    padding: 2rem 2.2rem;
   }
 
-  .hero-container .cards {
-    gap: 1.4rem;
+  .container {
+    padding: var(--desktop-padding);
+  }
+
+  /* hero container */
+
+  .hero-container {
+    height: 80vh;
+    
+  }
+
+  .text-wrapper {
+    width:40%;
+  }
+
+  .hero-container .getting-started {
+    width: 50%;
   }
 }
