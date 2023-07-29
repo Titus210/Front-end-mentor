@@ -3,8 +3,8 @@
   --white: #fff;
   --grayish: rgba(218, 222, 226, 0.932);
   --black: #111;
-  --primary-color-2: rgb(27, 110, 110);
-  --primary-color: rgb(118, 82, 237,0.7);
+  --primary-color-2: rgba(17, 70, 70, 0.3);
+  --primary-color: rgba(118, 82, 237, 0.411);
 
   --background-1: rgba(22, 22, 22, 0.904);
   --star-color: rgb(255, 208, 0);
@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: var(--background-1);
+  background-color: var(--black);
 }
 
 h1,
@@ -64,17 +64,28 @@ h3 {
   font-size: var(--medium-text);
   color: var(--primary-color);
   text-transform: uppercase;
-  
+}
+
+h4 {
+  font-size: var(--medium-text-desktop);
 }
 p {
   font-size: var(--paragraph);
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 a {
   text-decoration: none;
   color: var(--white);
 }
 
+li {
+  list-style-type: none;
+}
 .btn {
   border: 0.1rem solid var(--primary-color);
   color: var(--white);
@@ -85,13 +96,15 @@ a {
 
 .btn:hover {
   background-color: var(--primary-color);
-  color: var(--black);
 }
 
 .section-text {
   font-size: var(--medium-text);
 }
 
+.heading {
+  background: var(--primary-color-2);
+}
 .heading h3 {
   font-size: var(--section-header);
   color: var(--white);
@@ -115,7 +128,7 @@ a {
 
 .icon i {
   font-size: var(--icon-font);
-  color: var(--primary-color);
+  color: gold;
 }
 
 .container {
@@ -126,9 +139,13 @@ a {
 header {
   display: flex;
   justify-content: space-around;
-  background-color: var(--background-1);
+  background-color: var(--primary-color-2);
   align-items: center;
   padding: 1rem 0.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 /* logo */
@@ -183,22 +200,14 @@ nav ul li:not(:last-child) {
 
 .cards {
   display: grid;
-  gap: 0.2rem;
+  gap: 0.6rem;
   align-self: center;
   margin: 1.2rem 0rem;
 }
 
 .card {
   background-color: #1f2022b0;
-  border: 1px solid #adabab;
-      padding: 1rem 1.4rem;
-}
-
-.card {
-  padding: 1rem 0.4rem;
-}
-
-.card:nth-child(even) {
+  padding: 1rem 1.4rem;
   border: 1px solid var(--primary-color);
 }
 
@@ -207,32 +216,266 @@ nav ul li:not(:last-child) {
   font-size: var(--medium-text);
   font-style: italic;
   font-weight: 300;
-  margin:1rem 0rem;
+  margin: 1rem 0rem;
 }
 /*  ------------------ SERVICES -----------------------*/
 .services {
   background-color: var(--black);
 }
 .services-container .cards .card {
-  border-bottom: 3px solid var(--white);
+  border-bottom: 3px solid var(--grayish);
+  box-shadow: 4px 2px 3px rgb(43, 42, 42);
 }
-
 
 /* colored icons */
-.services-container .web-dev{
-  background:var(--primary-color);
+.services-container .web-dev {
+  background: #252525;
 }
 
-.services-container .web-dev{
-  background:var(--primary-color);
+/*  ------------------ PROJECTS -----------------------*/
+.projects-container .image-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image-wrapper {
+}
+
+.projects-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  ------------------ aBOUT -----------------------*/
+.about-section {
+  background-color: var(--black);
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.about-cards .team-work {
+  height: 70vh;
+  background: url("../images/team-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 1rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  border: 1px solid var(--grayish);
+  border: 1px solid var(--grayish);
+}
+
+.about-cards .office-philosophy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.office-philosophy > div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 1rem;
+  border: 1px solid var(--grayish);
+}
+.about-cards p {
+  color: var(--white);
+}
+
+.office-philosophy .office {
+  background: url("../images/project-3.jpg");
+}
+
+.office-philosophy .philosophy {
+  background: url("../images/project-2.jpg");
+}
+
+.about-section .content-wrapper {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1px;
+}
+
+.content-wrapper div {
+  padding: 0.6rem 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.content-wrapper div p {
+  font-size: 14px;
+  color: var(--grayish);
+  margin: 0.5rem 0rem;
+}
+
+.content-wrapper div {
+  border-bottom: 2px solid var(--primary-color-2);
+}
+
+/*  ------------------ TESTIMONIALS -----------------------*/
+.testimonials {
+  height: max-content;
+}
+
+.testimonials .testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.testimonial {
+  background: #1f2022b0;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+
+  height: 90%;
+}
+
+.testimonial-cards .testimonial h3 {
+  font-size: 2.2rem;
+}
+
+.testimonial-cards .testimonial > p {
+  font-size: 0.9rem;
+  margin: 1.4rem 0rem;
+}
+
+.testimonial .stars i {
+  font-size: 1.3rem;
+}
+
+.testimonial .fa-quote-right {
+  color: var(--white);
+}
+
+.testimonial .user-details {
+  position: relative;
+  bottom: -20%;
+}
+.user-details img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.user-details h4 {
+  color: var(--white);
+  font-size: var(--medium-text);
+  margin: 1rem 0rem;
+  font-family: 700;
+}
+.user-details p {
+  font-size: var(--medium-text);
+  color: var(--grayish);
+  font-style: italic;
+}
+
+/* --------------------  BLOGS ------------------*/
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.blog-cards .card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.blog-cards .text-content > div:last-child {
+  width: 60%;
+  text-align: center;
+}
+/* -------------------- FOOTER ------------------*/
+
+footer {
+  background: var(--background-1);
+  padding: 2rem;
+  font: size 0.9rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-container div h4 {
+  margin-bottom: 1.2rem;
+  color: #9e1;
+}
+
+.footer-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-1 h2 {
+  font-size: var(--font-48);
+}
+
+.footer-1 p {
+  color: var(--white-color);
+  text-align: center;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  margin-left: 0.3rem;
+  color: var(--primary-color-orange);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer-4 p {
+  color: var(--white-color);
+}
+/* Reset margin on social icons */
+.footer-socials li a:hover {
+  margin-left: 0rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--background-1);
+  color: var(--primary-color-orange);
 }
 
 /*---------------------- MEDIA QUERIES--------------------------------- */
 /* TABLET */
 @media (min-width: 768px) and (max-width: 968px) {
   /* hero */
-  .hero {
+
+  .hero-container {
+    height: 80vh;
   }
+
   .text-wrapper {
     width: 50%;
   }
@@ -243,8 +486,32 @@ nav ul li:not(:last-child) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 
+  /* about */
+  .about-cards .office-philosophy {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .about-section .content-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* TESTIMONIALS */
+  .testimonials .testimonial-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* BLOGS */
+  .blog-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* DESKTOP */
 @media (min-width: 968px) {
   .section-text {
@@ -252,6 +519,9 @@ nav ul li:not(:last-child) {
   }
   h1 {
     font-weight: var(--header-main-desktop);
+  }
+  .container {
+    padding: var(--desktop-padding);
   }
 
   .cards {
@@ -262,23 +532,66 @@ nav ul li:not(:last-child) {
   .card {
     padding: 2rem 2.2rem;
   }
-
-  .container {
-    padding: var(--desktop-padding);
-  }
-
   /* hero container */
 
   .hero-container {
-    height: 80vh;
-    
+    height: 85vh;
   }
 
   .text-wrapper {
-    width:40%;
+    width: 40%;
   }
 
   .hero-container .getting-started {
-    width: 50%;
+    width: 40%;
+  }
+
+  .hero-container .getting-started p {
+    padding: 1.2rem 1rem;
+    text-align: center;
+  }
+
+  /* projects */
+  .projects-container .image-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* ABOUT */
+  .about-cards .office-philosophy {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-section .content-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonials .testimonial-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* BLOGS */
+
+  /* --------------------  BLOGS ------------------*/
+  .blog-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-cards .card {
+    padding: 0rem 0rem;
+  }
+  .blog-cards .card .text-content {
+    padding: 1rem;
+  }
+
+  /* footer */
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 }
