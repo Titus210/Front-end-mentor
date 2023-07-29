@@ -128,7 +128,7 @@ li {
 
 .icon i {
   font-size: var(--icon-font);
-  color: gold;
+  color: #9e1;
 }
 
 .container {
@@ -400,6 +400,40 @@ nav ul li:not(:last-child) {
   width: 60%;
   text-align: center;
 }
+/* ----------------------- PROJECT IN MIND ----------------*/
+.project-mind {
+  background-color: var(--black);
+  height: 40vh;
+  background: url('../images/light-2.jpg');
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.project-mind-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content div h2 {
+  margin: 2rem;
+}
+.project-mind-container .btn {
+  width: 40%;
+  text-align: center;
+}
 /* -------------------- FOOTER ------------------*/
 
 footer {
@@ -412,6 +446,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+
+  padding: 1rem 0rem;
 }
 
 .footer-container div h4 {
@@ -426,11 +462,11 @@ footer {
 }
 
 .footer-1 h2 {
-  font-size: var(--font-48);
+  font-size: var(--medium-text-desktop);
 }
 
 .footer-1 p {
-  color: var(--white-color);
+  color: var(--white);
   text-align: center;
 }
 
@@ -441,7 +477,7 @@ footer ul li {
 footer ul li a:hover {
   text-decoration: underline;
   margin-left: 0.3rem;
-  color: var(--primary-color-orange);
+  color: var(--primary-color);
 }
 
 .footer-socials {
@@ -452,8 +488,9 @@ footer ul li a:hover {
   margin-top: 2rem;
 }
 
-.footer-4 p {
-  color: var(--white-color);
+.footer-4 div >  p {
+  color: var(--white);
+  font-size: 16px;
 }
 /* Reset margin on social icons */
 .footer-socials li a:hover {
@@ -510,6 +547,12 @@ footer ul li a:hover {
   /* BLOGS */
   .blog-cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
   }
 }
 /* DESKTOP */
