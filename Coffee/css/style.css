@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap");
+
+:root {
+  /* fonts */
+
+  /* font  weight */
+
+  /* transition */
+}
+
+:root {
+  /* colors */
+  --background-dark: #222222;
+  /* Dark blackish gray background */
+  --background-light: #ffffff;
+  /* Good whitish color for body and sections */
+  --primary-orange: #ffa909fb;
+  --grayish: #333333;
+
+  /* box shaddow */
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --box-shadow-offset-x: 0;
+  --box-shadow-offset-y: 4px;
+  --box-shadow-blur-radius: 10px;
+  --box-shadow-spread-radius: 0;
+  --box-shadow-transition-duration: 0.3s;
+
+  /* fonts */
+  --paragraph: 1.3rem;
+  --small-paragraph: 0.7rem;
+  --header: 3.5rem;
+  --button-text: 1.1rem;
+  --medium-text: 2.6rem;
+  /* screen size */
+  --desktop-width: 85%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-dark);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  color: #ffffff;
+}
+
+/* reset size  and margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* set default size */
+h1 {
+  font-size: var(--header);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--medium-text);
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+h4 {
+  font-size: var(--button-text);
+}
+
+p {
+  font-size: var(--paragraph);
+}
+
+a {
+  text-decoration: none;
+  color: var(--background-light);
+}
+
+
+i {
+  color: var(--primary-orange);
+}
+
+li {
+  list-style-type: none;
+}
+
+
+section {
+  padding: 2rem 0rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.button {
+  position: relative;
+}
+
+/* 
+.btn-cover {
+background-color: var(--primary-orange);
+  border-radius: 2rem 0rem;
+  width: 30%;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  bottom: 0;
+} */
+
+.button .text {
+  width: 50%;
+}
+
+.btn {
+  padding: 0.5rem 0.9rem;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  font-size: var(--button-text);
+  font-weight: 600;
+
+  background-color: var(--primary-orange);
+}
+
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* ----------------------- HEADER -------------------------*/
+
+header {
+  display: flex;
+  background-color: var(--grayish);
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  margin: 0 1.5rem;
+}
+
+.logo i {
+  color: var(--primary-orange);
+}
+
+.toggle-sidebar i {
+  font-size: 1.4rem;
+}
+
+.toggle-sidebar .fa-close {
+  display: none;
+}
+
+/* ----------------------- HERO -------------------------*/
+
+.hero {
+  height: 80vh;
+  background-color: var(--background-dark);
+  background-image: url("/images/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .container {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0rem 1rem;
+}
+
+
+.hero .text .colored-text {
+  color: var(--primary-orange)
+}
+
+
+.hero .image {
+  display: none;
+}
+
+/* create a top and bottom margin between the  elements */
+.hero .text p {
+  margin: 2rem 0rem;
+}
+
+/* -----------------  ------ COFFEE LIST -------------------------*/
+
+.coffee_list {}
+
+.coffee_list .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+
+  margin: auto;
+}
+
+article {
+  border: 1px solid white;
+  padding: 1rem;
+}
+
+article .text h3 {
+  margin: 0.5rem 0rem;
+  text-transform: uppercase;
+
+}
+
+article .text p {
+  font-size: var(--small-paragraph);
+
+}
+
+
+
+/* ----------------------- INTRODUCTION -------------------------*/
+.introduction {
+  background-color: #333333;
+  display: grid;
+
+}
+
+
+.introduction .container {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem 1rem;
+  height: 100%;
+
+}
+
+.introduction .image {
+  background-image: url('../images/coffee-9.jpg');
+  height: 30vh;
+
+  width: 100%;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.introduction .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.introduction .text p {
+  font-size: var(--small-paragraph);
+
+}
+
+.introduction .spacing-item {
+  margin: 1rem 0rem;
+}
+
+
+/* ----------------------- SPECIAL COFFEE -------------------------*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.cards article {
+  border: 1px solid rgb(243, 243, 242);
+  padding: 0.7rem;
+
+  border-radius: 12px;
+}
+
+
+article .text h3 {
+  margin: 0.5rem 0rem;
+  text-transform: uppercase;
+
+}
+
+article .text p {
+  font-size: var(--small-paragraph);
+
+}
+
+
+.special_coffee article .image {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.special_coffee article:nth-child(1) .image {
+  background-image: url('../images/coffee-2.jpg');
+}
+
+
+.special_coffee article:nth-child(2) .image {
+  background-image: url('../images/coffee-3.jpg');
+}
+
+.special_coffee article:nth-child(3) .image {
+  background-image: url('../images/coffee-7.jpg');
+}
+
+
+.special_coffee article:nth-child(4) .image {
+  background-image: url('../images/coffee-6.jpg');
+}
+
+
+
+/* select last child */
+.special_coffee .text div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.4rem;
+}
+
+.special_coffee i {
+  font-size: 1.4rem;
+}
+
+/* ----------------------- BREAKFAST SNACKS -------------------------*/
+
+.breakfast-snacks {
+  background-color: #333333;
+}
+
+.breakfast-snacks .card-list {
+  margin: 1rem 0rem;
+}
+
+.breakfast-snacks .card-list ul {
+  display: flex;
+
+}
+
+.breakfast-snacks .card-list ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* ----------------------- NEWS LETTER -------------------------*/
+
+/* ----------------------- FOOTER -------------------------*/
+
+footer {
+  background-color: #333333;
+}
+
+/* ---------------------------------------------------------------*/
+/* ----------------------- MEDIA QUERIES -------------------------*/
+/* ---------------------------------------------------------------*/
+
+/* -------------- TABLET -------------------*/
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 98%;
+  }
+
+  .toggle-sidebar {
+    display: none;
+  }
+
+  /* ------ HERO -----------*/
+
+  .hero .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .hero .image {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /* ------ COFFEE LIST -----------*/
+
+  .coffee_list .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+
+    margin: auto;
+  }
+
+  /* ------ INTRODUCTION -----------*/
+  .introduction {
+    height: 50vh;
+  }
+
+  .introduction .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+  }
+
+  .introduction .image {
+    background-image: url('../images/coffee-9.jpg');
+    height: 100%;
+    width: 100%;
+  }
+
+  .introduction .text {
+    width: 80%;
+  }
+
+  /*-------------_____SPECIAL COFFEE____---------------------*/
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+
+
+}
+
+
+
+/* -------------- DESKTOP -------------------*/
+@media screen and (min-width:968px) {
+  .container {
+    width: 80%;
+  }
+
+  .introduction .container {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+
+
+  /* ------ COFFEE LIST -----------*/
+  .coffee_list .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+
+    margin: auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
