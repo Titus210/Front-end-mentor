@@ -31,6 +31,7 @@
   --header: 3.5rem;
   --button-text: 1.1rem;
   --medium-text: 2.6rem;
+  --header-section: 2.2rem;
   /* screen size */
   --desktop-width: 85%;
 }
@@ -104,6 +105,34 @@ section {
   padding: 2rem 0rem;
 }
 
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:1rem 0rem 2rem 0rem;
+}
+
+.section-header h3 {
+  font-size: var(--header-section);
+  text-align: center;
+  color: orangered;
+  
+  position: relative;
+}
+
+.section-header h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+
+  height: 3px;
+  background: white;
+bottom: -5px;
+left: 30%;
+}
+
+
 .container {
   width: 90%;
   margin: auto;
@@ -135,6 +164,8 @@ background-color: var(--primary-orange);
   text-align: center;
   font-size: var(--button-text);
   font-weight: 600;
+
+  text-align: center;
 
   background-color: var(--primary-orange);
 }
@@ -318,7 +349,6 @@ article .text h3 {
 
 article .text p {
   font-size: var(--small-paragraph);
-
 }
 
 
@@ -368,7 +398,7 @@ article .text p {
 }
 
 .breakfast-snacks .card-list {
-  margin: 1rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 .breakfast-snacks .card-list ul {
@@ -397,7 +427,7 @@ footer {
 @media screen and (min-width: 768px) {
 
   .container {
-    width: 98%;
+    width: 90%;
   }
 
   .toggle-sidebar {
@@ -421,7 +451,7 @@ footer {
 
   .coffee_list .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem;
 
     margin: auto;
@@ -450,7 +480,7 @@ footer {
 
   /*-------------_____SPECIAL COFFEE____---------------------*/
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(`2, 1fr);
     gap: 2rem;
   }
 
