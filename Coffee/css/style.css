@@ -410,6 +410,18 @@ article .text p {
   margin-right: 1rem;
 }
 
+.blog-card .btn{
+margin: 1rem 0rem;
+}
+
+.blog-card article h4{
+  margin: 1rem 0rem;
+}
+.blog-card .cards{
+  display: grid;
+  height: 100%;
+}
+
 /* ----------------------- NEWS LETTER -------------------------*/
 
 /* ----------------------- FOOTER -------------------------*/
@@ -480,7 +492,7 @@ footer {
 
   /*-------------_____SPECIAL COFFEE____---------------------*/
   .cards {
-    grid-template-columns: repeat(`2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
