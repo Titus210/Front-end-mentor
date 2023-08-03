@@ -109,14 +109,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:1rem 0rem 2rem 0rem;
+  margin: 1rem 0rem 2rem 0rem;
 }
 
 .section-header h3 {
   font-size: var(--header-section);
   text-align: center;
   color: orangered;
-  
+
   position: relative;
 }
 
@@ -128,8 +128,8 @@ section {
 
   height: 3px;
   background: white;
-bottom: -5px;
-left: 30%;
+  bottom: -5px;
+  left: 30%;
 }
 
 
@@ -410,24 +410,69 @@ article .text p {
   margin-right: 1rem;
 }
 
-.blog-card .btn{
-margin: 1rem 0rem;
-}
-
-.blog-card article h4{
+.blog-card .btn {
   margin: 1rem 0rem;
 }
-.blog-card .cards{
+
+.blog-card article h4 {
+  margin: 1rem 0rem;
+}
+
+.blog-card .cards {
   display: grid;
   height: 100%;
 }
 
 /* ----------------------- NEWS LETTER -------------------------*/
 
+.newsletter {
+  height: max-content;
+  background-color: #333333;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.newsletter .text {
+display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0rem;
+
+  
+}
+
+.newsletter .text h2 {
+  font-size: 1.8rem;
+  
+}
+
+.newsletter .input {
+  display: flex;
+
+  
+  height: max-content;
+  margin: 1rem 0rem;
+}
+
+.input input {
+  border: none;
+  padding: 0 2rem;
+
+  width: 70%;
+
+  
+  
+}
+
 /* ----------------------- FOOTER -------------------------*/
 
 footer {
-  background-color: #333333;
+  background-color: #222222;
 }
 
 /* ---------------------------------------------------------------*/
@@ -505,7 +550,7 @@ footer {
 /* -------------- DESKTOP -------------------*/
 @media screen and (min-width:968px) {
   .container {
-    width: 80%;
+    width: 70%;
   }
 
   .introduction .container {
