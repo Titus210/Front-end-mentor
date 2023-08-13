@@ -327,6 +327,9 @@ article .text p {
 
 /* ----------------------- SPECIAL COFFEE -------------------------*/
 
+
+/* The cards styling are shared among all the cards in the apllication
+    - The display is flex except for blog section */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -335,7 +338,7 @@ article .text p {
 
 .cards article {
   border: 1px solid rgb(243, 243, 242);
-  padding: 0.7rem;
+  padding: 0.7rem; 
 
   border-radius: 12px;
 }
