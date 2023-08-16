@@ -481,8 +481,22 @@ article .text p {
 /* Make all links have left margin except the first child */
 .social-links:not(:first-child)
 {
-  margin-left 1rem; ;
+  margin-left :1rem; ;
 }
+
+.footer_contacts{
+  display:flex;
+  justify-content: center;
+}
+
+.footer_contacts div{
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* ----------------------- FOOTER -------------------------*/
 
 footer {
