@@ -338,7 +338,7 @@ article .text p {
 
 .cards article {
   border: 1px solid rgb(243, 243, 242);
-  padding: 0.7rem; 
+  padding: 0.7rem;
 
   border-radius: 12px;
 }
@@ -440,24 +440,24 @@ article .text p {
 }
 
 .newsletter .text {
-display: flex;
+  display: flex;
   align-self: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem 0rem;
 
-  
+
 }
 
 .newsletter .text h2 {
   font-size: 1.8rem;
-  
+
 }
 
 .newsletter .input {
   display: flex;
 
-  
+
   height: max-content;
   margin: 1rem 0rem;
 }
@@ -467,15 +467,35 @@ display: flex;
   padding: 0 2rem;
 
   width: 70%;
-
-  
-  
 }
 
+/* styles for social links
+- twitter facebook, instagram individual styles 
+*/
+
+.social-links {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+/* Make all links have left margin except the first child */
+.social-links:not(:first-child)
+{
+  margin-left 1rem; ;
+}
 /* ----------------------- FOOTER -------------------------*/
 
 footer {
   background-color: #222222;
+}
+
+footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.footer_social-link {
+  display: flex;
 }
 
 /* ---------------------------------------------------------------*/
