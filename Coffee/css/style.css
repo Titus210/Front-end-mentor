@@ -469,35 +469,10 @@ article .text p {
   width: 70%;
 }
 
-/* styles for social links
-- twitter facebook, instagram individual styles 
-*/
-
-.social-links {
-  font-size: 1.2rem;
-  display: flex;
-}
-
-/* Make all links have left margin except the first child */
-.social-links:not(:first-child)
-{
-  margin-left :1rem; ;
-}
-
-.footer_contacts{
-  display:flex;
-  justify-content: center;
-}
-
-.footer_contacts div{
-  display:  flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /* ----------------------- FOOTER -------------------------*/
+
+
 
 footer {
   background-color: #222222;
@@ -511,6 +486,34 @@ footer .wrapper {
 .footer_social-link {
   display: flex;
 }
+
+/* styles for social links
+- twitter facebook, instagram individual styles 
+*/
+
+.social-links {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+/* Make all links have left margin except the first child */
+.social-links:not(:first-child) {
+  margin-left: 1rem;
+  ;
+}
+
+.footer_contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_contacts div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* ---------------------------------------------------------------*/
 /* ----------------------- MEDIA QUERIES -------------------------*/
