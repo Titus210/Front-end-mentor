@@ -483,9 +483,15 @@ footer .wrapper {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.footer_social-link {
+.footer_social-links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem
 }
+
+
 
 /* styles for social links
 - twitter facebook, instagram individual styles 
@@ -494,12 +500,17 @@ footer .wrapper {
 .social-links {
   font-size: 1.2rem;
   display: flex;
+  padding: 1rem;
 }
 
 /* Make all links have left margin except the first child */
-.social-links:not(:first-child) {
+.social-links p:not(:first-child) {
   margin-left: 1rem;
-  ;
+  font-size: 1.2rem;
+}
+
+.social-links p i {
+  font-size: 1.4rem;
 }
 
 .footer_contacts {
@@ -510,10 +521,30 @@ footer .wrapper {
 .footer_contacts div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0.5rem;
 }
 
+.footer_contacts h3 {
+  font-size: 1.3rem;
+}
+
+.footer_contacts p {
+  font-size: 1.1rem;
+  color: var(--primary-orange)
+}
+
+.footer_contacts p span {
+  color: white;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.copyright {
+  padding: 1rem 0rem;
+  text-align: center;
+  border-top: 1px solid gray;
+  ;
+}
 
 /* ---------------------------------------------------------------*/
 /* ----------------------- MEDIA QUERIES -------------------------*/
@@ -581,7 +612,11 @@ footer .wrapper {
     gap: 2rem;
   }
 
+  /*------------------------__FOOTER ----------------------------------*/
 
+  footer .wrapper {
+    grid-template-columns: 1fr 2fr;
+  }
 
 }
 
