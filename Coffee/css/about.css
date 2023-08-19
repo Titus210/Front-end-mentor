@@ -33,14 +33,12 @@ section {
 }
 
 /* OUR MISSION */
-.mission {
-    background-color: #ff2;
-}
+.mission {}
 
 .mission .wrapper {
     display: flex;
     flex-direction: column;
-    background-color: rgb(54, 54, 31);
+    background-color: rgb(37, 37, 34);
     padding: 1rem 0.7rem;
 }
 
@@ -77,71 +75,130 @@ section {
 .block-1 div {
     height: 140px;
     width: 130px;
-    background-color: green;
+    background-color: rgb(55, 59, 55);
 }
 
 .block-2 {
-    background-color: aqua;
+    background-color: rgb(51, 56, 56);
 }
 
 /* OUR TEAM */
-.our-team {
-    background-color: aqua;
+.our-team {}
 
-
+.our-team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .our-team .wrapper {
     display: flex;
-    justify-content: center;
-
-    background-color: blueviolet;
-    display: grid;
+    width: 100%;
+    padding: 3rem 1rem;
 }
 
 
 
 .our-team_cards {
+    position: relative;
+    z-index: 1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    place-items: center;
+}
+
+.our-team_cards .card:not(:first-child) {
+    margin-left: 1rem;
 }
 
 .card {
-    background-color: blue;
     padding: 1rem;
     position: relative;
-    height: 130px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 12px;
-
+    height: 300px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    /* not supported by firefox, safari */
+    backdrop-filter: blur(10px);
 }
 
+.card .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5;
+}
 
-.card .image {
-    position: absolute;
-    top: -1.5rem;
-    height: 60px;
-    width: 60px;
-    overflow: hidden;
-    object-fit: contain;
+.card:hover .content {
+    opacity: 0.5;
+}
+
+.content .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .text h4 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.content .text p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .image {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.01);
 }
 
 .image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.card .text {
-    position: relative;
-    text-align: center;
+.card .social-links {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-links li {
+    list-style-type: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+}
+
+
+.social-links li a {
+    color: #fff;
 }
 
 /* -------------- TABLET -------------------*/
@@ -175,7 +232,7 @@ section {
     .block-1 div {
         height: 160px;
         width: 170px;
-        background-color: green;
+
     }
 
 

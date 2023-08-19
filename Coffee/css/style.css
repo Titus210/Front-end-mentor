@@ -410,7 +410,7 @@ article .text p {
 }
 
 .breakfast-snacks .card-list ul {
-  display: flex;
+  display: flex;s  
 
 }
 
@@ -450,8 +450,6 @@ article .text p {
   align-items: center;
   flex-direction: column;
   padding: 2rem 0rem;
-
-
 }
 
 .newsletter .text h2 {

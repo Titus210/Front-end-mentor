@@ -1,0 +1,79 @@
+section {
+    height: 90vh;
+
+    display: grid;
+    place-items: center;
+
+}
+
+.contact .container {
+    display: flex;
+    height: 80%;
+    gap: 1rem;
+}
+
+
+.form-wrapper {
+    background: rgba(134, 56, 10, 0.09);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 80%
+}
+
+form input {
+    padding: 0.6rem;
+    border: none;
+    width: 100%;
+}
+
+
+
+.name {
+    display: flex;
+
+}
+
+.name .second-name {
+    margin-left: 1rem;
+}
+
+.email {
+    margin: 1rem 0rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact-info {
+    padding: 4rem;
+    background: rgba(92, 50, 50, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 50%;
+
+    display: grid;
+    place-items: center;
+}
+
+.submit .btn {
+    width: 50%;
+
+}
+
+.submit {
+    justify-self: end;
+}
+
+.contact-info .details div {
+    display: flex;
+}
+
+.phone {
+    padding: 2rem 0rem;
+}
