@@ -142,6 +142,9 @@ section {
   position: relative;
 }
 
+.btn:hover{
+  cursor: pointer;
+}
 /* 
 .btn-cover {
 background-color: var(--primary-orange);
