@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    width:  90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color:rgb(3, 153, 253);
+}
+.page{
+    height: 40vh;
+    
+    width: 100%;
+    background: url('./maintenance.png');
+    background-repeat: no-repeat;
+background-size: contain;
+    background-position: center;
+    align-items: center;
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.timer {
+    margin: 0 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.circle-border {
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgb(223, 214, 214);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border: 100px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect( 100px, 50px, 100px, 0px);
+}
+
+.timer p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+/* Responsive  mobile view*/
+@media (max-width: 768px) {
+h2{
+    font-size: 1.5rem;
+}
+ .page{
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  
+ }
+    .timer {
+        margin: 1rem 0.5rem;
+    }
+
+    .circle-border {
+        width: 80px;
+        height: 80px;
+        border: 8px solid rgb(223, 214, 214);
+    }
+}
